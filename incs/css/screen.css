@@ -1,7 +1,7 @@
 /*---------------------------------------- INFORMATION ------------------------------
 Author:  Rachael Hill
 Project: Miss Know It All - Advice Blog
-Date: 01/14/2013
+Date: 01/15/2013
 
     STYLE GUIDE
 Header Background Color: #e9e8e3
@@ -25,6 +25,7 @@ body{
   background: url(../img/main_Bg.png);
   margin: 0;
   padding: 0;
+  font-family: Helvetica, Arial, sans-serif;
 }
 
 a{
@@ -34,6 +35,7 @@ a{
 /*------------------------- HEADING ------------------------*/
 header{
   background-color: #e9e8e3;
+  border-bottom: 1px solid #c2c1bb;
 /*Drop Shadow*/  
   -moz-box-shadow: 3px 3px 50px #1a1916;
 	-webkit-box-shadow: 3px 3px 50px #1a1916;
@@ -62,7 +64,7 @@ header li{
   background: url(../img/logo.png) no-repeat;
   width: 402px;
   height: 82px;
-  margin-right: 30em;
+  margin-right: 20em;
 }
 
 .logo a{
@@ -72,19 +74,9 @@ header li{
   height: 82px;
 }
 
-.createPost{
-  background: url(../img/post_icon.png) no-repeat;
-  width: 60px;
-  height: 57px;
-  position: relative;
-  top: 1em;
-}
-
 .createPost a{
-  display: inline-block;
-  text-indent: -9999px;
-  width: 60px;
-  height: 57px;
+  font: 1.2em 'Open Sans', Helvetica, sans-serif;
+  color: #648293;
 }
 
 .clear{
@@ -95,5 +87,185 @@ header li{
 /* HOME */
 .allPosts{
   margin: 0 auto;
-  width: 960px;
+  margin-top: 3em;
+  width: 550px; 
+  background: url(../img/paper.png);
+  padding: 20px;
+/*Layer Paper*/
+  -webkit-box-shadow: 
+        1px 1px   0 rgba(0,   0,   0,   0.100), 
+        3px 3px   0 rgba(232, 232, 232, 1.0), 
+        4px 4px   0 rgba(0,   0,   0,   0.125), 
+        6px 6px   0 rgba(232, 232, 232, 1.0),  
+        7px 7px   0 rgba(0,   0,   0,   0.150), 
+        9px 9px   0 rgba(232, 232, 232, 1.0),  
+        10px 10px 0 rgba(0,   0,   0,   0.175);
+  -moz-box-shadow: 
+        1px 1px   0 rgba(0,   0,   0,   0.100), 
+        3px 3px   0 rgba(232, 232, 232, 1.0), 
+        4px 4px   0 rgba(0,   0,   0,   0.125), 
+        6px 6px   0 rgba(232, 232, 232, 1.0),  
+        7px 7px   0 rgba(0,   0,   0,   0.150), 
+        9px 9px   0 rgba(232, 232, 232, 1.0),  
+        10px 10px 0 rgba(0,   0,   0,   0.175);
+  box-shadow: 
+        1px 1px   0 rgba(0,   0,   0,   0.100), 
+        3px 3px   0 rgba(232, 232, 232, 1.0), 
+        4px 4px   0 rgba(0,   0,   0,   0.125), 
+        6px 6px   0 rgba(232, 232, 232, 1.0),  
+        7px 7px   0 rgba(0,   0,   0,   0.150), 
+        9px 9px   0 rgba(232, 232, 232, 1.0),  
+        10px 10px 0 rgba(0,   0,   0,   0.175);
+}
+
+.allPosts h2{
+  color: #648293;
+  font: 2.5em Fanwood, 'Times New Roman', serif;
+  margin: 0;
+  position: relative;
+  bottom: 4px;
+}
+
+.datePost{
+  font: .95em 'Open Sans', Helvetica, sans-serif;
+  font-style: oblique;
+  padding-left: 10px;
+  position: relative;
+  bottom: 5px;
+}
+
+.dearTitle{
+  font: 1.5em Fanwood, 'Times New Roman', serif;
+  margin-bottom: 0;
+  color: #363636;
+  font-style: oblique;
+}
+
+.postTxt{
+  font: 1em 'Open Sans', Helvetica, sans-serif;
+  margin: 0;
+  color: #363636;
+  margin-top: 1em;}
+
+.allPosts a{
+  color: #648293;
+  font: 1em 'Open Sans', Helvetica, sans-serif;
+  margin: 0;
+}
+
+.postUser{
+  padding-top: 1em;
+}
+
+.signUser{
+  margin-right: 10em;
+  font: 1.5em Fanwood, 'Times New Roman', serif;
+  color: #363636;
+}
+
+
+
+
+/* ribbon style */
+
+ .ribbon-wrapper {
+	position: relative;
+	-moz-border-bottom-colors: rgba(0, 0, 0, 0.02) rgba(0, 0, 0, 0.04) rgba(0, 0, 0, 0.06) rgba(0, 0, 0, 0.08) rgba(0, 0, 0, 0.10) rgba(0, 0, 0, 0.12) rgba(0, 0, 0, 0.14) rgba(0, 0, 0, 0.16) rgba(0, 0, 0, 0.18) rgba(0, 0, 0, 0.20);
+	-webkit-border-bottom-colors: rgba(0, 0, 0, 0.02) rgba(0, 0, 0, 0.04) rgba(0, 0, 0, 0.06) rgba(0, 0, 0, 0.08) rgba(0, 0, 0, 0.10) rgba(0, 0, 0, 0.12) rgba(0, 0, 0, 0.14) rgba(0, 0, 0, 0.16) rgba(0, 0, 0, 0.18) rgba(0, 0, 0, 0.20);
+	-moz-border-top-colors: rgba(0, 0, 0, 0.02) rgba(0, 0, 0, 0.04) rgba(0, 0, 0, 0.06) rgba(0, 0, 0, 0.08) rgba(0, 0, 0, 0.10) rgba(0, 0, 0, 0.12) rgba(0, 0, 0, 0.14) rgba(0, 0, 0, 0.16) rgba(0, 0, 0, 0.18) rgba(0, 0, 0, 0.20);
+	-webkit-border-top-colors: rgba(0, 0, 0, 0.02) rgba(0, 0, 0, 0.04) rgba(0, 0, 0, 0.06) rgba(0, 0, 0, 0.08) rgba(0, 0, 0, 0.10) rgba(0, 0, 0, 0.12) rgba(0, 0, 0, 0.14) rgba(0, 0, 0, 0.16) rgba(0, 0, 0, 0.18) rgba(0, 0, 0, 0.20);
+}
+  .ribbon-front {
+	background-color: #cb6353;	height: 40px;
+	width: 130px;
+	position: relative;
+	left:-10px;
+	z-index: 2;
+	float: left;
+}
+
+.ribbon-front p{
+  background: rgb(242,239,225); /* Old browsers */
+  background: -moz-linear-gradient(top,  rgba(242,239,225,1) 0%, rgba(226,223,208,1) 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(242,239,225,1)), color-stop(100%,rgba(226,223,208,1))); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top,  rgba(242,239,225,1) 0%,rgba(226,223,208,1) 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top,  rgba(242,239,225,1) 0%,rgba(226,223,208,1) 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top,  rgba(242,239,225,1) 0%,rgba(226,223,208,1) 100%); /* IE10+ */
+  background: linear-gradient(to bottom,  rgba(242,239,225,1) 0%,rgba(226,223,208,1) 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2efe1', endColorstr='#e2dfd0',GradientType=0 );/*IE6-9*/
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+  .ribbon-front,
+  .ribbon-back-left,
+  .ribbon-back-right
+{
+	-moz-box-shadow: 0px 0px 4px rgba(0,0,0,0.55);
+	-khtml-box-shadow: 0px 0px 4px rgba(0,0,0,0.55);
+	-webkit-box-shadow: 0px 0px 4px rgba(0,0,0,0.55);
+	-o-box-shadow: 0px 0px 4px rgba(0,0,0,0.55);
+}
+
+  .ribbon-edge-topleft,
+  .ribbon-edge-topright,
+  .ribbon-edge-bottomleft,
+  .ribbon-edge-bottomright {
+	position: absolute;
+	z-index: 1;
+	border-style:solid;
+	height:0px;
+	width:0px;
+}
+
+  .ribbon-edge-bottomleft,
+  .ribbon-edge-bottomright {
+	top: 40px;
+}
+
+  .ribbon-edge-topleft,
+  .ribbon-edge-bottomleft {
+	left: -10px;
+	border-color: transparent #923a2c transparent transparent;
+}
+
+  .ribbon-edge-topleft {
+	top: -10px;
+	border-width: 10px 10px 0 0;
+}
+  .ribbon-edge-bottomleft {
+	border-width: 0 10px 0px 0;
+}
+
+  .ribbon-edge-topright,
+  .ribbon-edge-bottomright {
+	left: 100px;
+	border-color: transparent transparent transparent #923a2c;
+}
+
+  .ribbon-edge-topright {
+	top: 0px;
+	border-width: 0px 0 0 0px;
+}
+  .ribbon-edge-bottomright {
+	border-width: 0 0 0px 0px;
+}
+
+  .ribbon-back-left {
+	position: absolute;
+	top: -10px;
+	left: -30px;
+	width: 30px;
+	height: 40px;
+	background-color: #cb6353;	z-index: 0;
+}
+
+  .ribbon-back-right {
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	width: 0px;
+	height: 40px;
+	z-index: 0;
 }
