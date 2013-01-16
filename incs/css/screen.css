@@ -231,3 +231,7 @@ a{
 }
 
 /* ********** CREATE POST ********** */
+.post-form label{
+  color: #648293;
+  font: 1.5em Fanwood, 'Times New Roman', serif;
+}
