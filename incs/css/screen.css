@@ -58,7 +58,7 @@ a{
 }
 
 /*------------------------- CONTENT ------------------------*/
-/* HOME */
+/* ********** HOME ********** */
 .all-posts{
   margin: 0 auto;
   margin-top: 3em;
@@ -229,3 +229,5 @@ a{
 	height: 40px;
 	z-index: 0;
 }
+
+/* ********** CREATE POST ********** */
