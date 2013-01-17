@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="en">
-<!--  ==================== COMMENTS ====================	
+<!--  ==================== INFORMATION ====================	
   Author:  Rachael Hill
   Project: Miss Know It All - Advice Blog
   Date: 01/17/2013
@@ -17,6 +17,6 @@
 <body>
 <!--  ==================== HEADER ====================	-->	
 	<header>
-		<h1 class="logo"><a href="">Miss Know It All</a></h1>
-		<h2 class="create-post"><a href="">Ask Miss Know It All</a></h2>
+		<h1 class="logo"><?=anchor('client/', 'Miss Know It All');?></h1>
+		<h2 class="create-post"><?=anchor('client/', 'Ask Miss Know It All')?></h2>
 	</header>
