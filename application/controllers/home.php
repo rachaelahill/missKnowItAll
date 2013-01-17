@@ -11,5 +11,8 @@ class Home extends CI_Controller {
 	{
   	//loading main header view
 		$this->load->view('header_view');
+		
+		//loading main blog view
+		$this->load->view('blog_view');
 	}
 }
