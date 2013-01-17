@@ -239,7 +239,7 @@ a{
 .post-form{
   float: right;
   width: 420px;
-  margin-top: 20px;
+  margin-top: 40px;
 }
 
 .post-form p{
@@ -344,12 +344,14 @@ a{
   width: 404px;
   font: 1em 'Open Sans', Helvetica, sans-serif;
   color: #181714;
+  padding-top: 90px;
 }
 
 .reasons h1{
   background: url(../img/get_Advice.png) no-repeat;
   text-indent: -9999px;
   height: 41px;
+  margin-left: 30px;
 }
 
 .reasons ul{
