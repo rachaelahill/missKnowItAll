@@ -1,4 +1,4 @@
-<!--  ==================== CONTENT ====================	-->		
+<!--  ==================== BLOG CONTENT ====================	-->		
 	<div class="all-posts">
 	    <h2>First Post</h2>
 	  	<div class="ribbon-wrapper">
