@@ -11,6 +11,8 @@
   <meta name="description" content="Advice blog">
   <meta name="author" content="Rachael">
   <link rel="stylesheet" href="<? echo base_url();?>incs/css/screen.css" type="text/css" media="screen"/>
+  <!-- FONTS -->
+  <link href='http://fonts.googleapis.com/css?family=Arizonia|Fanwood+Text' rel='stylesheet' type='text/css'>  
   <!--[if lt IE 9]>
   <![endif]-->
 </head>

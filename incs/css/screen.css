@@ -1,7 +1,7 @@
 /*---------------------------------------- INFORMATION ------------------------------
 Author:  Rachael Hill
 Project: Miss Know It All - Advice Blog
-Date: 01/17/2013
+Date: 01/18/2013
 
     STYLE GUIDE
 Header Background Color: #e9e8e3
@@ -13,9 +13,21 @@ Validation Color: #a94f41
 
     FONTS
 Content - Open Sans
-Logo - Miama
-Headings - Fanwood
+Logo - Arizonia
+Headings - Fanwood Text
 --------------------------------------------------------------------------------*/
+/*------------------------- EMBEDED FONTS ------------------------*/
+@font-face {
+    font-family: 'Open Sans';
+    src: url('../fonts/open_sans/opensans-regular-webfont.eot');
+    src: url('../fonts/open_sans/opensans-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/open_sans/opensans-regular-webfont.woff') format('woff'),
+         url('../fonts/open_sans/opensans-regular-webfont.ttf') format('truetype'),
+         url('../fonts/open_sans/opensans-regular-webfont.svg#open_sansregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
 /*------------------------- GENERAL ------------------------*/
 html{
   margin: 0;
@@ -34,18 +46,15 @@ a{
 
 /*------------------------- HEADING ------------------------*/
 .logo{
-  background: url(../img/logo.png) no-repeat;
-  width: 402px;
-  height: 82px;
-  padding: 0;
-  margin: 0 auto;
+  text-align: center;
 }
 
 .logo a{
-  display: inline-block;
-  text-indent: -9999px;
-  width: 402px;
-  height: 82px;
+  padding: 0;
+  margin: 0 auto;
+  font: 2em Arizonia, 'Times New Roman', serif;
+  color: #648293;
+  text-decoration: none;
 }
 
 .create-post{
@@ -91,7 +100,7 @@ a{
 
 .all-posts h2{
   color: #648293;
-  font: 2.5em Fanwood, 'Times New Roman', serif;
+  font: 2.5em 'Fanwood Text', 'Times New Roman', serif;
   margin: 0;
 }
 
@@ -120,7 +129,7 @@ a{
 }
 
 .dear-txt{
-  font: 1.5em Fanwood, 'Times New Roman', serif;
+  font: 1.5em 'Fanwood Text', 'Times New Roman', serif;
   margin-bottom: 0;
   color: #363636;
   font-style: oblique;
@@ -131,11 +140,12 @@ a{
   margin: 0;
   color: #363636;
   margin-top: 1em;
+  font-weight: lighter;
 }
 
 .user-sign{
   margin-right: 10em;
-  font: 1.5em Fanwood, 'Times New Roman', serif;
+  font: 1.5em 'Fanwood Text', 'Times New Roman', serif;
   color: #363636;
 }
 
@@ -260,7 +270,7 @@ a{
 
 .post-form label{
   color: #648293;
-  font: 1.5em Fanwood, 'Times New Roman', serif;
+  font: 1.5em 'Fanwood Text', 'Times New Roman', serif;
 }
 
 .post-inpt{
@@ -354,7 +364,7 @@ a{
 }
 
 .reasons{
-  width: 404px;
+  width: 426px;
   font: 1em 'Open Sans', Helvetica, sans-serif;
   color: #181714;
   padding-top: 90px;
@@ -378,7 +388,7 @@ a{
 
 .reasons span{
   color: #648293;
-  font: 2em miama, 'Times New Roman', serif;
+  font: 2em Arizonia, 'Times New Roman', serif;
 }
 
 /* ********** POST DETAIL ********** */
