@@ -19,6 +19,7 @@
 <body>
 <!--  ==================== HEADER ====================	-->	
 	<header>
-		<h1 class="logo"><?=anchor('client/', 'Miss Know It All');?></h1>
+		<h1 class="logo-name"><?=anchor('client/', 'Miss Know It All');?></h1>
+		<p class="logo-image">Bow</p>
 		<h2 class="create-post"><?=anchor('client/user_posting', 'Ask Miss Know It All')?></h2>
 	</header>

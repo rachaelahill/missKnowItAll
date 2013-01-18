@@ -45,16 +45,30 @@ a{
 }
 
 /*------------------------- HEADING ------------------------*/
-.logo{
-  text-align: center;
+header{
+  width: 560px;
+  margin: 0 auto;
 }
 
-.logo a{
+.logo-image{
+  background: url(../img/bow.png) no-repeat;
+  text-indent: -9999px;
+  width: 65px;
+  height: 65px;
+  margin-left: 500px;
+  
+}
+
+.logo-name{
+  text-align: center;  
+}
+
+.logo-name a{
   padding: 0;
-  margin: 0 auto;
   font: 2em Arizonia, 'Times New Roman', serif;
   color: #648293;
   text-decoration: none;
+  float: left;
 }
 
 .create-post{
