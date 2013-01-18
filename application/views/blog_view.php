@@ -19,7 +19,7 @@
     	    Universal laws are the basic principles that rule every aspect of the universe and are the ways by which our world and the whole cosmos works, so that when we begin to focus on positive thoughts, we will bring positive results into our life; in the same way as when we begin to focus on negative thoughts we will bring negative results back into our life.<br/><br/>
     	    Unfortunately...</p>
       <p class="user-sign">John Smith</p>
-      <p><?=anchor('client/', 'continue reading')?></p>
+      <p><?=anchor('client/post_detail', 'continue reading')?></p>
     </div><!-- /post-content -->
 	</div><!-- /all-Posts -->
 </body>

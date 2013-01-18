@@ -10,7 +10,7 @@
   <title>Miss Know It All</title>
   <meta name="description" content="Advice blog">
   <meta name="author" content="Rachael">
-  <link rel="stylesheet" href="<? base_url();?>incs/css/screen.css" type="text/css" media="screen"/>
+  <link rel="stylesheet" href="<? echo base_url();?>incs/css/screen.css" type="text/css" media="screen"/>
   <!--[if lt IE 9]>
   <![endif]-->
 </head>
@@ -18,5 +18,5 @@
 <!--  ==================== HEADER ====================	-->	
 	<header>
 		<h1 class="logo"><?=anchor('client/', 'Miss Know It All');?></h1>
-		<h2 class="create-post"><?=anchor('client/', 'Ask Miss Know It All')?></h2>
+		<h2 class="create-post"><?=anchor('client/user_posting', 'Ask Miss Know It All')?></h2>
 	</header>

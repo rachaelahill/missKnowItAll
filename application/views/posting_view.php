@@ -7,8 +7,8 @@
   		<p><textarea name="postInpt" class="post-inpt"></textarea></p>
   		<label>Signature:</label>
   		<p><input type="text" name="signInpt" class="sign-inpt" placeholder="Ex: John Smith" /></p>
-  		<p class="submit-btn"><a href="#">Get Advice!</a></p>
-  		<p class="cancel-btn"><a href="#">Cancel</a></p>
+  		<p class="submit-btn"><?=anchor('home/', 'Get Advice!')?></p>
+  		<p class="cancel-btn"><?=anchor('home/', 'Cancel')?></p>
     </form>
     <div class="reasons">
       <h1>Get Advice</h1>
