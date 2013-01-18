@@ -263,7 +263,7 @@ a{
   font: 1.5em Fanwood, 'Times New Roman', serif;
 }
 
-.post-form input{
+.post-inpt{
   background: -moz-linear-gradient(top,  rgba(214,213,212,0.5) 0%, rgba(249,248,244,1) 8%, rgba(239,238,234,1) 50%, rgba(232,231,229,1) 100%); /* FF3.6+ */
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(214,213,212,0.5)), color-stop(8%,rgba(249,248,244,1)), color-stop(50%,rgba(239,238,234,1)), color-stop(100%,rgba(232,231,229,1))); /* Chrome,Safari4+ */
   background: -webkit-linear-gradient(top,  rgba(214,213,212,0.5) 0%,rgba(249,248,244,1) 8%,rgba(239,238,234,1) 50%,rgba(232,231,229,1) 100%); /* Chrome10+,Safari5.1+ */
@@ -320,7 +320,7 @@ a{
   outline-color: #648293;
 }
 
-.submit-btn a{
+.submit-btn{
   background: rgb(184,206,218); /* Old browsers */
   background: -moz-linear-gradient(top,  rgba(184,206,218,1) 0%, rgba(154,185,202,1) 12%, rgba(100,130,147,1) 50%, rgba(83,113,129,1) 89%, rgba(75,105,121,1) 100%); /* FF3.6+ */
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(184,206,218,1)), color-stop(12%,rgba(154,185,202,1)), color-stop(50%,rgba(100,130,147,1)), color-stop(89%,rgba(83,113,129,1)), color-stop(100%,rgba(75,105,121,1))); /* Chrome,Safari4+ */
@@ -341,6 +341,7 @@ a{
 	-ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#183444')";/* For IE 8 */
 	filter: progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#183444');/* For IE 5.5 - 7 */
 	margin-right: 15px;
+	border: none;
 }
 
 .cancel-btn{

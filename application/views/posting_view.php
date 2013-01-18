@@ -2,12 +2,12 @@
   <div class="wrapper">
     <?=form_open('home/', array('class' => 'post-form'));?>
   		<label>Title:</label>
-  		<p><input type="text" name="titleInpt" class="title-inpt" placeholder="Ex: First Post"/></p>
+  		<p><input type="text" name="titleInpt" class="post-inpt" placeholder="Ex: First Post"/></p>
   		<label>Dear Miss Know It All:</label>
-  		<p><textarea name="postInpt" class="post-inpt"></textarea></p>
+  		<p><textarea name="postInpt"></textarea></p>
   		<label>Signature:</label>
-  		<p><input type="text" name="signInpt" class="sign-inpt" placeholder="Ex: John Smith" /></p>
-  		<p class="submit-btn"><input type="submit" name="submit" value="" /></p>
+  		<p><input type="text" name="signInpt" class="post-inpt" placeholder="Ex: John Smith" /></p>
+  		<p><input type="submit" class="submit-btn" value="Get Advice!" /></p>
   		<p class="cancel-btn"><?=anchor('home/', 'Cancel')?></p>
     </form>
     <div class="reasons">
