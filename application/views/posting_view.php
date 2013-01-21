@@ -1,6 +1,6 @@
 <!--  ==================== POSTING CONTENT ====================	-->		
   <div class="wrapper">
-    <?=form_open('client/submit_user_post', array('class' => 'post-form'));?>
+    <?=form_open('client/create_post', array('class' => 'post-form'));?>
   		<label>Title:</label>
   		<p><input type="text" name="titleInpt" class="post-inpt" placeholder="Ex: First Post"/></p>
   		<label>Dear Miss Know It All:</label>

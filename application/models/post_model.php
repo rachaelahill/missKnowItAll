@@ -4,9 +4,8 @@
     parent::__construct();
   }  
   
-  public function insert_user_post(){
-  	$data = $_POST;
-  	$data['postDate'] = time();
+  public function insert_post($data){
   	$this->db->insert('userPosts', $data);
+  	return;
 	}
 }
