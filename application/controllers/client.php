@@ -5,6 +5,7 @@ class Client extends CI_Controller {
 	function __construct()
 	{
 		parent::__construct();
+		$this->load->model('post_model');
 	}
 		
 	public function index()
@@ -32,5 +33,9 @@ class Client extends CI_Controller {
   	
   	//loading post detail view
   	$this->load->view('postDetail_view');
+	}
+	
+	public function submit_user_post(){
+  	$this->post_model->insert_user_post();
 	}
 }

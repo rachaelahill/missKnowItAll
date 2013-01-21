@@ -1,6 +1,6 @@
 <!--  ==================== POSTING CONTENT ====================	-->		
   <div class="wrapper">
-    <?=form_open('home/', array('class' => 'post-form'));?>
+    <?=form_open('client/submit_user_post', array('class' => 'post-form'));?>
   		<label>Title:</label>
   		<p><input type="text" name="titleInpt" class="post-inpt" placeholder="Ex: First Post"/></p>
   		<label>Dear Miss Know It All:</label>
@@ -8,7 +8,7 @@
   		<label>Signature:</label>
   		<p><input type="text" name="signInpt" class="post-inpt" placeholder="Ex: John Smith" /></p>
   		<p><input type="submit" class="submit-btn" value="Get Advice!" /></p>
-  		<p class="cancel-btn"><?=anchor('home/', 'Cancel')?></p>
+  		<p class="cancel-btn"><?=anchor('client/', 'Cancel')?></p>
     </form>
     <div class="reasons">
       <h1>Get Advice</h1>

@@ -76,7 +76,7 @@ header{
 }
 
 .create-post a{
-  font: 1em 'Open Sans', Helvetica, sans-serif;
+  font: 1.2em 'Fanwood Text', 'Times New Roman', serif;
   color: #648293;
 }
 
@@ -84,7 +84,7 @@ header{
 /* ********** HOME ********** */
 .all-posts{
   margin: 0 auto;
-  margin-top: 3em;
+  margin-top: 2em;
   width: 550px; 
   background: url(../img/paper.png);
   padding: 20px;
