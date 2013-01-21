@@ -23,5 +23,3 @@
 	</div><!-- /all-Posts -->
 	<? endforeach;?>
   <? endif;?>
-</body>
-</html>

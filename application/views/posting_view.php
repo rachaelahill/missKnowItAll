@@ -20,5 +20,3 @@
       <p>You don’t have to figure out everything on your own, ask <span>Miss Know It All</span> .</p>
     </div><!-- /reasons -->
   </div><!-- /wrapper -->
-</body>
-</html>

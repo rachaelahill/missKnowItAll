@@ -24,6 +24,9 @@ class Client extends CI_Controller {
 		
 		//loading main blog view with users' posts
 		$this->load->view('blog_view', $data);
+		
+		//loading footer view
+		$this->load->view('footer_view');
 	}
 
 //function runs when user clicks on Ask Advice	
@@ -34,6 +37,9 @@ class Client extends CI_Controller {
   	
   	//loading user posting view
   	$this->load->view('posting_view');
+  	
+  	//loading footer view
+		$this->load->view('footer_view');
 	}
 
 //function runs when user clicks on continue reading	
@@ -44,6 +50,9 @@ class Client extends CI_Controller {
   	
   	//loading post detail view
   	$this->load->view('postDetail_view');
+  	
+  	//loading footer view
+		$this->load->view('footer_view');
 	}
 	
 //function runs when user submits post
