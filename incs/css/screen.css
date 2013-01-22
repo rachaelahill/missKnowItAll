@@ -119,11 +119,11 @@ header{
 }
 
 .all-posts a{
-  color: #9f9f97;
+  color: #c85847;
   background-color: #e9e9e1;
   font: 1em 'Open Sans', Helvetica, sans-serif;
   margin: 0;
-  border: 1px solid #d4d4ca;
+  border: 1px solid #c85847;
   border-radius: 5px;
   padding: 10px;
   text-decoration: none;

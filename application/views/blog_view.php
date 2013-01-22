@@ -1,7 +1,7 @@
 <!--  ==================== BLOG CONTENT ====================	-->	
   <? if(isset($posts)) : foreach($posts as $row) :?>	
 	<div class="all-posts">
-	    <h2><? echo $row->titleName;?></h2>
+	    <h2><?=$row->titleName;?></h2>
 	  	<div class="ribbon-wrapper">
     		<div class="ribbon-front">
     			<p class="date-posted">January 10, 2013</p>
@@ -16,8 +16,8 @@
     	</div><!-- /Ribbon -->
     <div class="post-content">	
   	  <p class="dear-txt">Dear Miss Know It All,</p>
-  	  <p class="post-txt"><? echo $row->postTxt;?></p>
-      <p class="user-sign"><? echo $row->userSign;?></p>
+  	  <p class="post-txt"><?=$row->postTxt;?></p>
+      <p class="user-sign"><?=$row->userSign;?></p>
       <p><?=anchor("client/post_detail/$row->id", 'continue reading')?></p>
     </div><!-- /post-content -->
 	</div><!-- /all-Posts -->

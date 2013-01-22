@@ -9,6 +9,13 @@
     $query = $this->db->get('userPosts');
     return $query->result();
   }
+
+//function gets post clicked on by ID
+  public function get_single_post(){
+    $this->db->where('id', $this->uri->segment(3));
+    $query = $this->db->get('userPosts');
+    return $query->result();
+  }  
  
 //function inserts users' post into db  
   public function insert_post($data){

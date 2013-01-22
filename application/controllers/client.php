@@ -45,11 +45,18 @@ class Client extends CI_Controller {
 //function runs when user clicks on continue reading	
 	public function post_detail()
 	{
+	  //gets users' posts from model
+	  $data = array();
+	  if($query = $this->post_model->get_single_post())
+	  {
+  	  $data['posts'] = $query;
+	  }
+	  
   	//loading main header view
   	$this->load->view('header_view');
   	
   	//loading post detail view
-  	$this->load->view('postDetail_view');
+  	$this->load->view('postDetail_view', $data);
   	
   	//loading footer view
 		$this->load->view('footer_view');
