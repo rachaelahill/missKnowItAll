@@ -6,6 +6,7 @@
 
 //function gets users posts from db  
   public function get_posts(){
+    $this->db->order_by("postDate", "desc");
     $query = $this->db->get('userPosts');
     return $query->result();
   }

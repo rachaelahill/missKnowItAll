@@ -4,7 +4,7 @@
 	    <h2><?=$row->titleName;?></h2>
 	  	<div class="ribbon-wrapper">
     		<div class="ribbon-front">
-    			<p class="date-posted">January 10, 2013</p>
+    			<p class="date-posted"><?=date("F j, Y", $row->postDate);?></p>
     		</div>
     		<div class="ribbon-edge-topleft"></div>
     		<div class="ribbon-edge-back-topleft"></div>

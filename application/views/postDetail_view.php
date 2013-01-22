@@ -4,7 +4,7 @@
 	  <div class="tucked-corners top-corners">
       <span class="tucked-corners bottom-corners">
   	    <h2><?=$row->titleName;?></h2>
-  	    <p class="post-detail">January 10, 2013</p>
+  	    <p class="post-detail"><?=date("F j, Y", $row->postDate);?></p>
   	    <p class="dear-txt">Dear Miss Know It All,</p>
   	    <p class="post-txt"><?=$row->postTxt;?></p>
     	    <p class="user-sign"><?=$row->userSign;?></p>

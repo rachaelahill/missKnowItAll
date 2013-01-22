@@ -137,9 +137,9 @@ header{
 .date-posted{
   font: .95em 'Open Sans', Helvetica, sans-serif;
   font-style: oblique;
-  padding-left: 10px;
+  padding-left: 15px;
   position: relative;
-  top: 8px;
+  top: 10px;
 }
 
 .dear-txt{
@@ -174,7 +174,7 @@ header{
 
 .ribbon-front{
 	background-color: #cb6353;	height: 40px;
-	width: 130px;
+	width: 163px;
 	position: relative;
 	left:-10px;
 	z-index: 2;
