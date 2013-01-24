@@ -1,0 +1,68 @@
+/*---------------------------------------- INFORMATION ------------------------------
+Author:  Rachael Hill
+Project: Miss Know It All - Advice Blog
+Date: 01/23/2013
+
+    STYLE GUIDE
+Header Background Color: #e9e8e3
+Title Color: #648293
+Orange Color: #c85847
+Content Color: #181714
+Validation Color: #a94f41
+
+
+    FONTS
+Content - Open Sans
+Logo - Arizonia
+Headings - Fanwood Text
+--------------------------------------------------------------------------------*/
+/*------------------------- PAGINATION ------------------------*/
+.comments .pager{
+	width: 40%;
+	margin: 0 auto;
+}
+
+.pager{
+  overflow: hidden;
+  padding-top:1em;
+  width: 10.5em;
+  margin: 0 auto;
+  font: 1em 'Open Sans', Helvetica, sans-serif;
+  line-height:1.5em;  
+  color: #181714;
+}
+
+.pager a{
+  color: #648293;	
+  text-decoration: none;
+}
+
+.pager a:hover{
+  text-decoration:none;
+}
+
+.pager li{
+  float:left;
+  list-style-type:none;
+  margin-right:.3em;
+  font-size:1.1em;
+}
+
+img, a{
+  border:none;
+}
+
+.active a {
+ color:#648293;
+ font-weight:bold;
+}
+
+.disabled a{
+  cursor: default;
+  color: #7F7468;
+  text-decoration: line-through;
+}
+
+.disabled a:hover{
+	text-decoration: line-through;
+}

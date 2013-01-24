@@ -3,14 +3,15 @@
 <!--  ==================== INFORMATION ====================	
   Author:  Rachael Hill
   Project: Miss Know It All - Advice Blog
-  Date: 01/17/2013
+  Date: 01/23/2013
 ======================================================= -->	
 <head>
   <meta charset="utf-8">
   <title>Miss Know It All</title>
   <meta name="description" content="Advice blog">
   <meta name="author" content="Rachael">
-  <link rel="stylesheet" href="<? echo base_url();?>incs/css/screen.css" type="text/css" media="screen"/>
+  <link rel="stylesheet" href="<?=base_url();?>incs/css/screen.css" type="text/css" media="screen"/>
+  <link rel="stylesheet" href="<?=base_url();?>incs/css/flexipage.css" type="text/css" media="screen"/>
   <!-- FONTS -->
   <link href='http://fonts.googleapis.com/css?family=Arizonia|Fanwood+Text' rel='stylesheet' type='text/css'>  
   <!--[if lt IE 9]>

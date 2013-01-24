@@ -1,21 +1,9 @@
-$(document).ready(function(){
-var win = $(window);
-	var doc = $(document);
-	var btt = $('#btt');
-		
-	win.on('scroll', function(){
-
-    var diff = win.scrollTop() - (doc.height() - win.height());
-
-		if(diff >= -100){
-			$.ajax({
-				type:	'get',
-				dataType: 'html',
-				url:	"http://localhost/MKIA/index.php/client/",
-				success: function(posts){
-					console.log("works");
-				}
-			})
-		}
-	});
-});	
+/*---------------------------------------- INFORMATION ------------------------------
+Author:  Rachael Hill
+Project: Miss Know It All - Advice Blog
+Date: 01/23/2013
+--------------------------------------------------------------------------------*/
+/*------------------------- PAGINATION ------------------------*/
+$(document).ready(function() {
+	  $('.post-itm').flexipage();
+});                   

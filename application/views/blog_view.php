@@ -1,25 +1,29 @@
 <!--  ==================== BLOG CONTENT ====================	-->	
-  <? if(isset($posts)) : foreach($posts as $row) :?>	
-	<div class="all-posts">
-	    <h2><?=$row->titleName;?></h2>
-	  	<div class="ribbon-wrapper">
-    		<div class="ribbon-front">
-    			<p class="date-posted"><?=date("F j, Y", $row->postDate);?></p>
-    		</div>
-    		<div class="ribbon-edge-topleft"></div>
-    		<div class="ribbon-edge-back-topleft"></div>
-    		<div class="ribbon-edge-topright"></div>
-    		<div class="ribbon-edge-bottomleft"></div>
-    		<div class="ribbon-edge-bottomright"></div>
-    		<div class="ribbon-back-left"></div>
-    		<div class="ribbon-back-right"></div>
-    	</div><!-- /Ribbon -->
-    <div class="post-content">	
-  	  <p class="dear-txt">Dear Miss Know It All,</p>
-  	  <p class="post-txt"><?=$row->postTxt;?></p>
-      <p class="user-sign"><?=$row->userSign;?></p>
-      <p><?=anchor("client/post_detail/$row->id", 'continue reading')?></p>
-    </div><!-- /post-content -->
-	</div><!-- /all-Posts -->
-	<? endforeach;?>
-  <? endif;?>
+  <div class="post-wrapper">
+ 	  <ul class="post-itm">
+      <? if(isset($posts)) : foreach($posts as $row) :?>	
+    	<li class="all-posts">
+    	    <h2><?=$row->titleName;?></h2>
+    	  	<span class="ribbon-wrapper">
+        		<span class="ribbon-front">
+        			<p class="date-posted"><?=date("F j, Y", $row->postDate);?></p>
+        		</span>
+        		<span class="ribbon-edge-topleft"></span>
+        		<span class="ribbon-edge-back-topleft"></span>
+        		<span class="ribbon-edge-topright"></span>
+        		<span class="ribbon-edge-bottomleft"></span>
+        		<span class="ribbon-edge-bottomright"></span>
+        		<span class="ribbon-back-left"></span>
+        		<span class="ribbon-back-right"></span>
+        	</span><!-- /Ribbon -->
+        <span class="post-content">	
+      	  <p class="dear-txt">Dear Miss Know It All,</p>
+      	  <p class="post-txt"><?=$row->postTxt;?></p>
+          <p class="user-sign"><?=$row->userSign;?></p>
+          <p><?=anchor("client/post_detail/$row->id", 'continue reading')?></p>
+        </span><!-- /post-content -->
+    	</li><!-- /all-Posts -->
+    	<? endforeach;?>
+      <? endif;?>
+ 	  </ul><!-- /post-itm -->
+  </div><!-- /post-wrapper -->

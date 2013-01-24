@@ -1,5 +1,6 @@
 <!--  ==================== FOOTER ====================	-->	
-    <script src="<?php echo base_url();?>incs/js/jscroll.min.1.1.js" type="text/javascript"></script>
-    <script src="<?php echo base_url();?>incs/js/main.js" type="text/javascript"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+    <script type="text/javascript" src="<?=base_url();?>incs/js/jquery.flexipage.min.js"></script>
+		<script type="text/javascript" src="<?=base_url();?>incs/js/main.js"></script>
   </body>
 </html>
