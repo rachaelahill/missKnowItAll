@@ -303,13 +303,12 @@ header{
 
 /*------------------------- CREATE POST ------------------------*/
 .post-form{
-  float: right;
-  width: 420px;
   margin-top: 40px;
 }
 
-.post-form p{
-  margin: 0 0 25px 0;
+.form-wrapper{
+  margin: 0 auto;
+  width: 326px;
 }
 
 .post-form label{
@@ -411,23 +410,16 @@ header{
   width: 426px;
   font: 1em 'Open Sans', Helvetica, sans-serif;
   color: #181714;
-  padding-top: 90px;
-}
-
-.reasons h1{
-  background: url(../img/get_Advice.png) no-repeat;
-  text-indent: -9999px;
-  height: 41px;
-  margin-left: 30px;
 }
 
 .reasons ul{
   list-style-image: url(../img/bullet_Point.png);
   padding: 0;
+  margin: 0;
 }
 
 .reasons li{
-  padding-top: 10px;
+  padding-top: 5px;
 }
 
 .reasons span{

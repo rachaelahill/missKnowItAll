@@ -1,5 +1,13 @@
 <!--  ==================== POSTING CONTENT ====================	-->		
-  <div class="wrapper">
+  <div class="form-wrapper">
+    <div class="reasons">
+      <ul>
+        <li>Don’t know what to do about your relationship?</li>
+    	  <li>Having issues at school or work?</li>
+    	  <li>Situations just not working out the way you thought?</li>
+      </ul>
+      <p>You don’t have to figure out everything on your own, ask <span>Miss Know It All</span> .</p>
+    </div><!-- /reasons -->
     <?=form_open('client/create_post', array('class' => 'post-form'));?>
   		<label>Title:</label>
   		<p><input type="text" name="titleInpt" class="post-inpt" placeholder="Ex: First Post"/></p>
@@ -10,13 +18,4 @@
   		<p><input type="submit" class="submit-btn" value="Get Advice!" /></p>
   		<p class="cancel-btn"><?=anchor('client/', 'Cancel')?></p>
     </form>
-    <div class="reasons">
-      <h1>Get Advice</h1>
-      <ul>
-        <li>Don’t know what to do about your relationship?</li>
-    	  <li>Having issues at school or work?</li>
-    	  <li>Situations just not working out the way you thought?</li>
-      </ul>
-      <p>You don’t have to figure out everything on your own, ask <span>Miss Know It All</span> .</p>
-    </div><!-- /reasons -->
   </div><!-- /wrapper -->
