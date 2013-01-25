@@ -1,9 +1,9 @@
 <!--  ==================== BLOG CONTENT ====================	-->	
-  <div class="post-wrapper">
+ <div class="post-wrapper">
  	  <ul class="post-itm">
       <? if(isset($posts)) : foreach($posts as $row) :?>	
     	<li class="all-posts">
-    	    <h2><?=$row->titleName;?></h2>
+    	    <h2><?=anchor("client/post_detail/$row->id", $row->titleName)?></h2>
     	  	<span class="ribbon-wrapper">
         		<span class="ribbon-front">
         			<p class="date-posted"><?=date("F j, Y", $row->postDate);?></p>
@@ -18,9 +18,9 @@
         	</span><!-- /Ribbon -->
         <span class="post-content">	
       	  <p class="dear-txt">Dear Miss Know It All,</p>
-      	  <p class="post-txt"><?=$row->postTxt;?></p>
+      	  <p class="post-txt trunc"><?=$row->postTxt;?></p>
           <p class="user-sign"><?=$row->userSign;?></p>
-          <p><?=anchor("client/post_detail/$row->id", 'continue reading')?></p>
+          <p class="continue-btn"><?=anchor("client/post_detail/$row->id", 'continue reading')?></p>
         </span><!-- /post-content -->
     	</li><!-- /all-Posts -->
     	<? endforeach;?>
