@@ -22,9 +22,5 @@
 	<header>
 		<h1 class="logo-name"><?=anchor('client/', 'Miss Know It All');?></h1>
 		<p class="logo-image">Bow</p>
-		<hr/>
-		<hr/>
 		<h2 class="create-post"><?=anchor('client/user_posting', 'Ask Advice')?></h2>
-		<hr/>
-		<hr/>
 	</header>
