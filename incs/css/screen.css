@@ -354,7 +354,7 @@ header{
   background: linear-gradient(to bottom,  rgba(214,213,212,0.5) 0%,rgba(249,248,244,1) 2%,rgba(239,238,234,1) 50%,rgba(232,231,229,1) 100%); /* W3C */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#80d6d5d4', endColorstr='#e8e7e5',GradientType=0 );/*IE6-9*/
   width: 400px;
-  height: 250px;
+  height: 450px;
   font: 1em 'Open Sans', Helvetica, sans-serif;
   color: #181714;
   resize: none;
