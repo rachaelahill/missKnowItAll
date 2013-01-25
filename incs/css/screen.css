@@ -405,6 +405,7 @@ header{
 .cancel-btn a{
   font: 1.2em 'Open Sans', Helvetica, sans-serif;
   color: #c85847;
+  text-decoration: none;
 }
 
 .reasons{
