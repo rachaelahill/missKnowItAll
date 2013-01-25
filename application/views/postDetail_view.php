@@ -1,17 +1,26 @@
 <!--  ==================== POST DETAIL CONTENT ====================	-->		
 	<div class="wrapper">
   	<? if(isset($posts)) : foreach($posts as $row) :?>	
-  	  <div class="tucked-corners top-corners">
-        <span class="tucked-corners bottom-corners">
-    	    <h2><?=$row->titleName;?></h2>
-    	    <p class="post-detail"><?=date("F j, Y", $row->postDate);?></p>
+  	  <div class="all-posts">
+    	   <h2 class="title-detail"><?=$row->titleName;?></h2>
+    	   <span class="ribbon-wrapper">
+        		<span class="ribbon-front">
+        			<p class="date-posted"><?=date("F j, Y", $row->postDate);?></p>
+        		</span>
+        		<span class="ribbon-edge-topleft"></span>
+        		<span class="ribbon-edge-back-topleft"></span>
+        		<span class="ribbon-edge-topright"></span>
+        		<span class="ribbon-edge-bottomleft"></span>
+        		<span class="ribbon-edge-bottomright"></span>
+        		<span class="ribbon-back-left"></span>
+        		<span class="ribbon-back-right"></span>
+        	</span><!-- /Ribbon -->
+        <span class="post-content">
     	    <p class="dear-txt">Dear Miss Know It All,</p>
     	    <p class="post-txt"><?=$row->postTxt;?></p>
-      	    <p class="user-sign"><?=$row->userSign;?></p>
-    	  </span><!-- /tucked-corners-bottom -->
-      </div><!-- /tucked-corners-top -->
-      <hr/>
-      <hr/>
+    	    <p class="user-sign"><?=$row->userSign;?></p>
+        </span><!-- /post-content -->
+      </div><!-- /paper-style -->
       <div class="resp-post">
         <h2>Re: <?=$row->titleName;?></h2>
   	    <p class="post-detail">January 13, 2013</p>
