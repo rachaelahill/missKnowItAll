@@ -93,6 +93,7 @@ header{
 .create-post a{
   font: 1.2em 'Fanwood Text', 'Times New Roman', serif;
   color: #648293;
+  text-decoration: none;
 }
 
 /*------------------------- HOME ------------------------*/
