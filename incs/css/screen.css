@@ -50,6 +50,14 @@ a{
   width: 550px; 
 }
 
+h2{
+  color: #648293;
+}
+
+p{
+  color: #181714;
+}
+
 
 /*------------------------- HEADING ------------------------*/
 header{
@@ -171,15 +179,12 @@ header{
 .dear-txt{
   font: 1.5em 'Fanwood Text', 'Times New Roman', serif;
   margin-bottom: 0;
-  color: #363636;
   font-style: oblique;
 }
 
 .post-txt{
   font: 1em 'Open Sans', Helvetica, sans-serif;
-  margin: 0;
-  color: #363636;
-  margin-top: 1em;
+  margin: 1em 0 0 1.5em;
   font-weight: lighter;
 }
 
@@ -435,19 +440,10 @@ header{
   margin: 0;
 }
 
-.tucked-corners p{
-  margin: 5px 15px 5px 15px;
-}
-
 .tucked-corners h2{
   font: 2.5em 'Fanwood Text', 'Times New Roman', serif;
-  margin: 0 0 0 15px;
-}
-
-.resp-post h2{
-  color: #648293;
-  font: 2.5em 'Fanwood Text', 'Times New Roman', serif;
-  margin: 0;
+  margin: 25px 0 0 15px;
+  color: #181714;
 }
 
 .sign-resp{
@@ -455,9 +451,9 @@ header{
   font: 2em Arizonia, 'Times New Roman', serif;
 }
 
-.post-detail{
+.resp-date{
   font-family:'Open Sans', Helvetica, sans-serif;
-  padding: 0 0 5px 0;
+  padding: 0 0 5px 20px;
 }
 
 div.tucked-corners, span.tucked-corners {
@@ -466,7 +462,7 @@ div.tucked-corners, span.tucked-corners {
 
 div.tucked-corners {
     background: url(../img/paper.png);
-    margin: 50px auto;
+    margin: 88px auto;
     padding: 10px;
     margin-bottom: 5em;
     position: relative;
