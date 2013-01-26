@@ -5,8 +5,7 @@ class Admin extends CI_Controller {
 	function __construct()
 	{
 		parent::__construct();
-		//loads post model
-		$this->load->model('admin_model');
+		//loads admin model
 	}
 	
 	public function index(){
