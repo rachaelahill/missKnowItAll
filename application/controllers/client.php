@@ -13,7 +13,6 @@ class Client extends CI_Controller {
 	public function index()
 	{
 	  //gets users' posts from model
-	  $data = array();
 	  if($query = $this->post_model->get_posts())
 	  {
   	  $data['posts'] = $query;

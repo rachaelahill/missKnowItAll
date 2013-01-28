@@ -24,8 +24,6 @@
     
     $query = $this->db->insert('adminLogin', $data);
     return $query;
-    
-    
   }
 
 }

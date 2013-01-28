@@ -8,6 +8,9 @@ class Admin extends CI_Controller {
 		
 		//loads admin model
 		$this->load->model('admin_model');
+		
+		//loads post model
+		$this->load->model('post_model');
 	}
 	
 	public function index(){
@@ -18,11 +21,16 @@ class Admin extends CI_Controller {
 	  if(empty($admin['logged_in'])){
   	  redirect('login/');
 	  }
+	  
+	  if($query = $this->post_model->get_posts())
+	  {
+  	  $data['posts'] = $query;
+	  }
 	  //loading admin header view
 	  $this->load->view('admin_header_view');
 	  
 	  //loading admin login view
-	  $this->load->view('admin_dashboard_view');
+	  $this->load->view('admin_dashboard_view', $data);
 	  
   	//loading footer view
 		$this->load->view('footer_view');
