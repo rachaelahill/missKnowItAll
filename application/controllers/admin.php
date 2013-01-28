@@ -5,11 +5,19 @@ class Admin extends CI_Controller {
 	function __construct()
 	{
 		parent::__construct();
+		
 		//loads admin model
 		$this->load->model('admin_model');
 	}
 	
 	public function index(){
+	  //setting variable to session userdata
+	  $admin['logged_in'] = $this->session->userdata('logged_in');
+	  
+	  //if session is empty admin will be redirected back to login form
+	  if(empty($admin['logged_in'])){
+  	  redirect('login/');
+	  }
 	  //loading admin header view
 	  $this->load->view('admin_header_view');
 	  
@@ -18,5 +26,13 @@ class Admin extends CI_Controller {
 	  
   	//loading footer view
 		$this->load->view('footer_view');
-	}	
+	}
+	
+	public function log_out(){
+	  //removes session once admin clicks log out
+  	$this->session->sess_destroy();
+  	
+  	//sends admin back to login form
+  	redirect('login/');
+	}
 }
