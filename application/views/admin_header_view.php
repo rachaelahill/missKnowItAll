@@ -20,14 +20,4 @@
 <body>
 <!--  ==================== HEADER ====================	-->	
 	<header>
-  	<? $admin['logged_in'] = $this->session->userdata('logged_in');
-  	  if(empty($admin['logged_in'])){?>
-  	    <h1 class="logo-name"><?=anchor('admin/', 'Miss Know It All');?></h1>
-  	    <p class="logo-image">Bow</p>
-   <? }else{?>
-       <h1 class="welcome">Welcome,</h1>
-       <p class="log-out"><?=anchor('admin/log_out', 'Log Out');?></p>
-       <h1 class="logo-name"><?=anchor('admin/', 'Miss Know It All');?></h1>
-       <p class="logo-image">Bow</p>
-   <? }?>
-   </header>
+  	   </header>
