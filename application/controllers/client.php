@@ -72,5 +72,5 @@ class Client extends CI_Controller {
 	  );
   	$this->post_model->insert_post($data);
   	$this->index();
-	}		
+	}
 }

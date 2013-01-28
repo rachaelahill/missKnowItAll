@@ -14,21 +14,9 @@ class Admin extends CI_Controller {
 	  $this->load->view('admin_header_view');
 	  
 	  //loading admin login view
-	  $this->load->view('admin_login_view');
+	  $this->load->view('admin_dashboard_view');
 	  
   	//loading footer view
 		$this->load->view('footer_view');
-	}
-	
-	public function admin_dashboard(){
-  	//loading admin header view
-	  $this->load->view('admin_header_view');
-	  
-	  //loading admin dashboard view
-	  $this->load->view('admin_dashboard_view');
-	  
-	  //loading footer view
-		$this->load->view('footer_view');
-	}
-
+	}	
 }
