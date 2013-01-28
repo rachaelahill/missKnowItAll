@@ -1,7 +1,7 @@
 /*---------------------------------------- INFORMATION ------------------------------
 Author:  Rachael Hill
 Project: Miss Know It All - Advice Blog
-Date: 01/24/2013
+Date: 01/28/2013
 
     STYLE GUIDE
 Header Background Color: #e9e8e3
@@ -75,7 +75,8 @@ header{
 }
 
 .logo-name{
-  text-align: center;  
+  text-align: center; 
+  clear: both; 
 }
 
 .logo-name a{
@@ -529,4 +530,27 @@ div.tucked-corners {
         -ms-transform: rotate(135deg);
          -o-transform: rotate(135deg);
             transform: rotate(135deg);
+}
+
+/*------------------------- ADMIN DASHBOARD ------------------------*/
+.welcome{
+  font: 2em Arizonia, 'Times New Roman', serif;
+  color: #181714;
+  float: left;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  padding-right: 10em;
+}
+
+.log-out{
+ padding-top: 25px;
+ margin-bottom: 0;
+ padding-bottom: 0;
+}
+
+.log-out a{
+  font: 1.2em 'Fanwood Text', 'Times New Roman', serif;
+  color: #c85847;
+  text-decoration: none;
+  border-bottom: 2px dashed rgba(200, 87, 74, .3);
 }
