@@ -3,7 +3,7 @@
 <!--  ==================== INFORMATION ====================	
   Author:  Rachael Hill
   Project: Miss Know It All - Advice Blog
-  Date: 01/26/2013
+  Date: 01/28/2013
 ======================================================= -->	
 <head>
   <meta charset="utf-8">
@@ -20,6 +20,14 @@
 <body>
 <!--  ==================== HEADER ====================	-->	
 	<header>
-		<h1 class="logo-name"><?=anchor('admin/', 'Miss Know It All');?></h1>
-		<p class="logo-image">Bow</p>
-	</header>
+  	<? $admin['logged_in'] = $this->session->userdata('logged_in');
+  	  if(empty($admin['logged_in'])){?>
+  	    <h1 class="logo-name"><?=anchor('admin/', 'Miss Know It All');?></h1>
+  	    <p class="logo-image">Bow</p>
+   <? }else{?>
+       <h1 class="welcome">Welcome,</h1>
+       <p class="log-out"><?=anchor('admin/log_out', 'Log Out');?></p>
+       <h1 class="logo-name"><?=anchor('admin/', 'Miss Know It All');?></h1>
+       <p class="logo-image">Bow</p>
+   <? }?>
+   </header>
