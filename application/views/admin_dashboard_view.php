@@ -20,7 +20,7 @@
       	  <p class="dear-txt">Dear Miss Know It All,</p>
       	  <p class="post-txt trunc"><?=$row->postTxt;?></p>
           <p class="user-sign"><?=$row->userSign;?></p>
-          <p class="continue-btn"><?=anchor("admin/post_response/$row->id", 'continue reading')?></p>
+          <p class="continue-btn"><?=anchor("client/post_detail/$row->id", 'continue reading')?></p>
         </span><!-- /post-content -->
     	</li><!-- /all-Posts -->
     	<? endforeach;?>
