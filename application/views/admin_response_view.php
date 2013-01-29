@@ -20,18 +20,22 @@
     	    <p class="post-txt"><?=$row->postTxt;?></p>
     	    <p class="user-sign"><?=$row->userSign;?></p>
         </div><!-- /post-content -->
+        <? endforeach ?>
+  	<? endif ?><!-- /user post conditional -->
       </div><!-- /all-posts -->
+      <? if(isset($response)) : foreach($response as $resp) :?>	
       <div class="tucked-corners top-corners">
         <span class="tucked-corners bottom-corners">       
           <h2>Re: <?=$row->titleName;?></h2>
     	    <p class="resp-date"></p>
     	    <div class="post-content">
       	    <p class="dear-txt">Dear <?=$row->userSign;?>,</p>
-      	    <p class="post-txt"></p>
+      	    <p class="post-txt"><?=$resp->respTxt;?></p>
         	    <p class="sign-resp">Miss Know It All</p>
     	    </div><!-- /post-content -->
         </span><!-- /tucked-corners bottom-corners -->
       </div><!-- /tucked-corners top-corners -->	
-  	<? endforeach ?>
-  	<? endif ?>
+      <? endforeach ?>
+      <? endif ?><!-- /admin resp conditional -->
+  	
 	</div>

@@ -45,7 +45,6 @@ class Client extends CI_Controller {
 	public function post_detail()
 	{
 	  //gets users' posts from model
-	  $data = array();
 	  if($query = $this->post_model->get_single_post())
 	  {
   	  $data['posts'] = $query;

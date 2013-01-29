@@ -4,6 +4,7 @@
     parent::__construct();
   }  
   
+//function checks if admin is in db   
   public function check_login()
   {
     $this->db->where('username', $this->input->post('username'));
@@ -16,6 +17,7 @@
     }
   }
   
+//function adds a new admin into db  
   public function add_admin(){
     $data = array(
       'username' => $this->input->post('username'),
@@ -25,5 +27,12 @@
     $query = $this->db->insert('adminLogin', $data);
     return $query;
   }
-
+  
+//function gets a user's post by ID when clicked on by admin
+  public function get_admin_response(){
+     $this->db->join('userPosts', 'adminPosts.userId = userPosts.id')
+     ->where('userPosts.id', $this->uri->segment(3));
+     $query = $this->db->get('adminPosts');
+     return $query->result();
+  } 
 }

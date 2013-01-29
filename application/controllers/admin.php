@@ -23,6 +23,7 @@ class Admin extends CI_Controller {
   	  redirect('login/');
 	  }
 	  
+	  //gets user's post detail from post model
 	  if($query = $this->post_model->get_posts())
 	  {
   	  $data['posts'] = $query;
@@ -40,9 +41,14 @@ class Admin extends CI_Controller {
 //function runs when admin clicks on continue reading	
 	public function post_response()
 	{
-	  //gets users' posts from model
-	  $data = array();
-	  if($query = $this->admin_model->get_single_post())
+	  //gets admin's response from admin model
+	  if($query = $this->admin_model->get_admin_response())
+	  {
+  	  $data['response'] = $query;
+	  }
+	  
+	  //gets user's post detail from post model
+	  if($query = $this->post_model->get_single_post())
 	  {
   	  $data['posts'] = $query;
 	  }
