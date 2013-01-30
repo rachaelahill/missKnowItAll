@@ -28,37 +28,13 @@ class Admin extends CI_Controller {
 	  {
   	  $data['posts'] = $query;
 	  }
+	  
 	  //loading admin header view
 	  $this->load->view('admin_header_view');
 	  
 	  //loading admin login view
 	  $this->load->view('admin_dashboard_view', $data);
 	  
-  	//loading footer view
-		$this->load->view('footer_view');
-	}
-	
-//function runs when admin clicks on continue reading	
-	public function post_response()
-	{
-	  //gets admin's response from admin model
-	  if($query = $this->admin_model->get_admin_response())
-	  {
-  	  $data['response'] = $query;
-	  }
-	  
-	  //gets user's post detail from post model
-	  if($query = $this->post_model->get_single_post())
-	  {
-  	  $data['posts'] = $query;
-	  }
-	  
-  	//loading admin header view
-  	$this->load->view('admin_header_view');
-  	
-  	//loading admin response view
-  	$this->load->view('admin_response_view', $data);
-  	
   	//loading footer view
 		$this->load->view('footer_view');
 	}
