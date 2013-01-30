@@ -29,5 +29,7 @@
        <p class="log-out"><?=anchor('admin/log_out', 'Log Out');?></p>
        <h1 class="logo-name"><?=anchor('admin/', 'Miss Know It All');?></h1>
        <p class="logo-image">Bow</p>
+       <h2 class="unanswered"><?=anchor('admin/', 'Unanswered')?></h2>
+       <h2 class="answered"><?=anchor('admin/answered_posts', 'Answered')?></h2>
    <? }?>
    </header>

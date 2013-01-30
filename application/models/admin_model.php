@@ -28,6 +28,22 @@
     return $query;
   }
   
+//function gets users posts from db where response is yes
+  public function get_unanswered_posts(){
+    $this->db->where('response', 'no')
+    ->order_by('postDate', 'desc');
+    $query = $this->db->get('userPosts');
+    return $query->result();
+  }
+  
+//function gets users posts from db where response is yes
+  public function get_answered_posts(){
+    $this->db->where('response', 'yes')
+    ->order_by('postDate', 'desc');
+    $query = $this->db->get('userPosts');
+    return $query->result();
+  }
+  
 //function gets a user's post by ID when clicked on by admin
   public function get_admin_response(){
      $this->db->join('userPosts', 'adminPosts.userId = userPosts.id')

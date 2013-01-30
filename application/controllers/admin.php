@@ -13,7 +13,7 @@ class Admin extends CI_Controller {
 		$this->load->model('post_model');
 	}
 
-//function runs once admin is logged in
+//function runs main page once admin is logged in
 	public function index(){
 	  //setting variable to session userdata
 	  $admin['logged_in'] = $this->session->userdata('logged_in');
@@ -24,11 +24,10 @@ class Admin extends CI_Controller {
 	  }
 	  
 	  //gets user's post detail from post model
-	  if($query = $this->post_model->get_posts())
+	  if($query = $this->admin_model->get_unanswered_posts())
 	  {
   	  $data['posts'] = $query;
 	  }
-	  
 	  //loading admin header view
 	  $this->load->view('admin_header_view');
 	  
@@ -38,6 +37,24 @@ class Admin extends CI_Controller {
   	//loading footer view
 		$this->load->view('footer_view');
 	}
+	
+//function runs when answered link is clicked
+	public function answered_posts(){
+	  //gets user's post detail from post model
+	  if($query = $this->admin_model->get_answered_posts())
+	  {
+  	  $data['posts'] = $query;
+	  }
+	  //loading admin header view
+	  $this->load->view('admin_header_view');
+	  
+	  //loading admin login view
+	  $this->load->view('admin_dashboard_view', $data);
+	  
+  	//loading footer view
+		$this->load->view('footer_view');
+	}
+
 	
 //function runs when admin click log out	
 	public function log_out(){
