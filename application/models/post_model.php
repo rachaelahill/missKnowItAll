@@ -4,9 +4,10 @@
     parent::__construct();
   }  
 
-//function gets users posts from db  
+//function gets users posts from db where response is yes
   public function get_posts(){
-    $this->db->order_by("postDate", "desc");
+    $this->db->where('response', 'yes')
+    ->order_by('postDate', 'desc');
     $query = $this->db->get('userPosts');
     return $query->result();
   }
