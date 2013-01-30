@@ -8,8 +8,22 @@ $(document).ready(function() {
 	  $('.post-itm').flexipage();
 	  
 	 //Truncating plugin sets limit to text
-	 $(".trunc").truncatable({
+	 $('.trunc').truncatable({
 	   limit: 200,
 	   hideText: '[hide]',
+	 });
+	 
+	 $('.unanswered').click(function(){
+	 $('.answered a').removeClass('selected');
+  	 $('.unanswered a').addClass('selected');
+  	 
+  	 return false;
+	 });
+	 
+	 $('.answered').click(function(){
+	 $('.unanswered a').removeClass('selected');
+  	 $('.answered a').addClass('selected');
+  	 
+  	 return false;
 	 });
 });                   
