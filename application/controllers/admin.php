@@ -6,6 +6,9 @@ class Admin extends CI_Controller {
 	{
 		parent::__construct();
 		
+		//runs the check session function
+		$this->check_session();
+		
 		//loads admin model
 		$this->load->model('admin_model');
 		
@@ -15,13 +18,6 @@ class Admin extends CI_Controller {
 
 //function runs main page once admin is logged in
 	public function index(){
-	  //setting variable to session userdata
-	  $admin['logged_in'] = $this->session->userdata('logged_in');
-	  
-	  //if session is empty admin will be redirected back to login form
-	  if(empty($admin['logged_in'])){
-  	  redirect('login/');
-	  }
 	  
 	  //gets user's post detail from post model
 	  if($query = $this->admin_model->get_unanswered_posts())
@@ -63,5 +59,16 @@ class Admin extends CI_Controller {
   	
   	//sends admin back to login form
   	redirect('login/');
+	}
+	
+//function runs beginning of controller before index function to check if session exists	
+	public function check_session(){
+  	//setting variable to session userdata
+	  $admin['logged_in'] = $this->session->userdata('logged_in');
+	  
+	  //if session is empty admin will be redirected back to login form
+	  if(empty($admin['logged_in'])){
+  	  redirect('login/');
+	  }
 	}
 }
