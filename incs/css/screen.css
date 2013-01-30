@@ -555,7 +555,7 @@ div.tucked-corners {
   border-bottom: 2px dashed rgba(200, 87, 74, .3);
 }
 
-.selected{
+.active{
   border-bottom: 2px dashed rgba(99, 129, 147, .3);
 }
 
