@@ -4,7 +4,10 @@
       <? if(isset($posts)) : foreach($posts as $user) :?>	
     	<li class="all-posts">
     	    <h2><?=anchor('client/post_detail/$user->id', $user->titleName)?></h2>
-    	    <p class="delete-post"><?=anchor('admin/delete_post', 'Remove Post')?></p>
+    	    <? $admin['logged_in'] = $this->session->userdata('logged_in');
+      	    if(isset($admin['logged_in'])){?>
+      	      <p class="delete-post"><?=anchor('admin/delete_post', 'Remove Post')?></p>
+    	    <? }?>
     	  	<span class="ribbon-wrapper">
         		<span class="ribbon-front">
         			<p class="date-posted"><?=date("F j, Y", $user->postDate);?></p>
