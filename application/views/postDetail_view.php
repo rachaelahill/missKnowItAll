@@ -28,7 +28,7 @@
           <div class="tucked-corners top-corners">
             <span class="tucked-corners bottom-corners">       
               <h2>Re: <?=$user->titleName;?></h2>
-        	    <p class="resp-date"><?=date("F j, Y", $user->respDate);?></p>
+        	    <p class="resp-date"><?=date("F j, Y", $resp->respDate);?></p>
         	    <div class="post-content">
           	    <p class="dear-txt">Dear <?=$user->userSign;?>,</p>
           	    <p class="post-txt"><?=$resp->respTxt;?></p>
