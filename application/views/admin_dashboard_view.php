@@ -5,8 +5,8 @@
     	<li class="all-posts">
     	    <h2><?=anchor("client/post_detail/$user->id", $user->titleName)?></h2>
     	    <? $admin['logged_in'] = $this->session->userdata('logged_in');
-      	    if(isset($admin['logged_in']) && $user->response == 'no'){?>
-      	      <p class="delete-post"><?=anchor("admin/delete_post/$user->id", 'Remove Post')?></p>
+      	   if(isset($admin['logged_in']) && $user->response == 'no'){?>
+      	     <p class="delete-post"><?=anchor("admin/delete_post/$user->id", 'Remove Post')?></p>
     	    <? }?>
     	  	<span class="ribbon-wrapper">
         		<span class="ribbon-front">

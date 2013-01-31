@@ -62,6 +62,11 @@ class Admin extends CI_Controller {
   	$this->admin_model->insert_resp($data);
   	$this->index();
 	}
+
+//function runs when admin clicks on edit resp
+	public function edit_resp(){
+  	
+	}		
 	
 //function runs when admin clicks on remove post 	
 	public function delete_post(){

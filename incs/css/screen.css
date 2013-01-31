@@ -443,6 +443,7 @@ header{
   font: 2.5em 'Fanwood Text', 'Times New Roman', serif;
   margin: 25px 0 0 15px;
   color: #181714;
+  float: left;
 }
 
 .sign-resp{
@@ -453,6 +454,7 @@ header{
 .resp-date{
   font-family:'Open Sans', Helvetica, sans-serif;
   padding: 0 0 5px 20px;
+  clear: both;
 }
 
 div.tucked-corners, span.tucked-corners {
@@ -580,12 +582,22 @@ div.tucked-corners {
   margin-right: 2em;
 }
 
-.delete-post{
+.delete-post,.edit-resp{
   text-align: right;
 }
 
 .delete-post a{
   font: 1em 'Open Sans', Helvetica, sans-serif;
   color: #c85847;
+  text-decoration: none;
+}
+
+.edit-resp{
+  margin: 40px 15px 0 0;
+}
+
+.edit-resp a{
+  font: 1em 'Open Sans', Helvetica, sans-serif;
+  color: #648293;
   text-decoration: none;
 }
