@@ -28,18 +28,31 @@
           <div class="tucked-corners top-corners">
             <span class="tucked-corners bottom-corners">       
               <h2>Re: <?=$user->titleName;?></h2>
-        	    <p class="resp-date"></p>
+        	    <p class="resp-date"><?=date("F j, Y", $user->respDate);?></p>
         	    <div class="post-content">
           	    <p class="dear-txt">Dear <?=$user->userSign;?>,</p>
           	    <p class="post-txt"><?=$resp->respTxt;?></p>
-            	    <p class="sign-resp">Miss Know It All</p>
+          	    <p class="sign-resp">Miss Know It All</p>
         	    </div><!-- /post-content -->
             </span><!-- /tucked-corners bottom-corners -->
           </div><!-- /tucked-corners top-corners -->	
         <? endforeach ?>
         <? endif ?><!-- /admin resp conditional -->
       <? }else{?>
-        <p>response form</p>
+        <div class="tucked-corners top-corners">
+          <span class="tucked-corners bottom-corners">   
+            <?=form_open('admin/create_resp', array('class' => 'post-form'));?>
+              <h2>Re: <?=$user->titleName;?></h2>
+              <div class="post-content">
+                <p class="dear-txt">Dear <?=$user->userSign;?>,</p>
+                <p><textarea name="postInpt" placeholder="Click here to start adivce..."></textarea></p>
+                <input type="hidden" name="userId" value="<?=$user->id?>"
+                <p><input type="submit" class="resp-btn" value="Give Advice!" /></p>
+                <p class="sign-resp">Miss Know It All</p>
+              </div><!-- /post-content -->
+            </form>
+          </span><!-- /tucked-corners bottom-corners -->
+        </div><!-- /post-content -->
       <? }?>
       
 	</div>

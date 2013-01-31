@@ -44,6 +44,7 @@
     return $query->result();
   }
   
+  
 //function gets a user's post by ID when clicked on by admin
   public function get_admin_response(){
      $this->db->join('userPosts', 'adminPosts.userId = userPosts.id')
@@ -51,4 +52,16 @@
      $query = $this->db->get('adminPosts');
      return $query->result();
   } 
+  
+//function inserts admin's response into db and updates users' response column to yes  
+  public function insert_resp($data){
+  	$this->db->insert('adminPosts', $data);
+  	$this->db->where('userPosts.id', $this->input->post('userId'));
+  	$respCol = array(
+  	  'response' => 'yes',
+  	);
+  	$this->db->update('userPosts', $respCol);
+  	return;
+	}
+
 }

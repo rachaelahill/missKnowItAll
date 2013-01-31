@@ -50,7 +50,18 @@ class Admin extends CI_Controller {
   	//loading footer view
 		$this->load->view('footer_view');
 	}
+	
+//function runs when admin submits response
+	public function create_resp(){
+	  $data = array(
+	    'respTxt' => $this->input->post('postInpt'),
+	    'userId' => $this->input->post('userId'),
+	    'respDate' => time()
+	  );
 
+  	$this->admin_model->insert_resp($data);
+  	$this->index();
+	}	
 	
 //function runs when admin click log out	
 	public function log_out(){
