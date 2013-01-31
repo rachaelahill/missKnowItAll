@@ -13,27 +13,6 @@ $(document).ready(function() {
 	   hideText: '[hide]',
 	 });
 	 
-	 /*
-$('.unanswered').click(function(){
-	   $('.answered a').removeClass('active');
-  	 $('.unanswered a').addClass('active'); 
-  	 $.post('admin/unanswered_posts', function(data){
-  	   $('.post-wrapper').html(data);
-  	   console.log(data);
-  	 });
-  	 return false;
-   });
-	 
-	 $('.answered').click(function(){
-	   $('.unanswered a').removeClass('active');
-  	 $('.answered a').addClass('active');
-  	 $.post('admin/answered_posts', function(data){
-  	   $('.post-wrapper').html(data);
-  	 });
-  	 return false;
-	 });
-*/
-	 
 });     
 
 

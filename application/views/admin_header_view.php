@@ -3,7 +3,7 @@
 <!--  ==================== INFORMATION ====================	
   Author:  Rachael Hill
   Project: Miss Know It All - Advice Blog
-  Date: 01/29/2013
+  Date: 01/31/2013
 ======================================================= -->	
 <head>
   <meta charset="utf-8">
@@ -29,7 +29,7 @@
        <p class="log-out"><?=anchor('admin/log_out', 'Log Out');?></p>
        <h1 class="logo-name"><?=anchor('admin/', 'Miss Know It All');?></h1>
        <p class="logo-image">Bow</p>
-       <h2 class="unanswered"><?=anchor('admin/', 'Unanswered', array('class' => 'active'))?></h2>
-       <h2 class="answered"><?=anchor('admin/answered_posts', 'Answered')?></h2>
+       <h2 class="unanswered"><? if($page == 'unanswered'){echo anchor('admin/', 'Unanswered', array('class' => 'active'));}else{echo anchor('admin/', 'Unanswered');}?></h2>
+       <h2 class="answered"><? if($page == 'answered_posts'){echo anchor('admin/answered_posts', 'Answered', array('class' => 'active'));}else{echo anchor('admin/answered_posts', 'Answered');}?></h2>
    <? }?>
    </header>
