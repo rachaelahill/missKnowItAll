@@ -24,11 +24,9 @@ class Admin extends CI_Controller {
 	  {
   	  $data['posts'] = $query;
 	  }
-	  
-	  $pagedata['page'] = 'unanswered';
-	  
+	  	  
 	  //loading admin header view
-	  $this->load->view('admin_header_view', $pagedata);
+	  $this->load->view('admin_header_view');
 	  
 	  //loading admin login view
 	  $this->load->view('admin_dashboard_view', $data);
@@ -44,11 +42,9 @@ class Admin extends CI_Controller {
 	  {
   	  $data['posts'] = $query;
 	  }
-	  
-	  $pagedata['page'] = 'answered_posts';
-	  
+	  	  
 	  //loading admin header view
-	  $this->load->view('admin_header_view', $pagedata);
+	  $this->load->view('admin_header_view');
 	  
 	  //loading admin login view
 	  $this->load->view('admin_dashboard_view', $data);
@@ -64,8 +60,11 @@ class Admin extends CI_Controller {
 	    'userId' => $this->input->post('userId'),
 	    'respDate' => time()
 	  );
-
+	  
+	  //sending array to admin model to insert resp function
   	$this->admin_model->insert_resp($data);
+  	
+  	//runs controller index
   	$this->index();
 	}
 

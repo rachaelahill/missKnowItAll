@@ -3,7 +3,11 @@
  	  <ul class="post-itm">
       <? if(isset($posts)) : foreach($posts as $user) :?>	
     	<li class="all-posts">
-    	    <h2><?=anchor("client/post_detail/$user->id", $user->titleName)?></h2>
+    	    <? if($user->response == 'yes'){?>
+    	      <h2><?=anchor("client/post_detail/$user->id/answered_posts", $user->titleName)?></h2>
+    	    <? }else{?> 
+    	      <h2><?=anchor("client/post_detail/$user->id/unanswered_posts", $user->titleName)?></h2>
+    	    <? }?>  
     	    <? $admin['logged_in'] = $this->session->userdata('logged_in');
       	   if(isset($admin['logged_in']) && $user->response == 'no'){?>
       	     <p class="delete-post"><?=anchor("admin/delete_post/$user->id", 'Remove Post')?></p>
@@ -24,7 +28,11 @@
       	  <p class="dear-txt">Dear Miss Know It All,</p>
       	  <p class="post-txt trunc"><?=$user->postTxt;?></p>
           <p class="user-sign"><?=$user->userSign;?></p>
-          <p class="continue-btn"><?=anchor("client/post_detail/$user->id", 'continue reading')?></p>
+          <? if($user->response == 'yes'){?>
+            <p class="continue-btn"><?=anchor("client/post_detail/$user->id/answered_posts", 'continue reading')?></p>
+          <? }else{?>
+           <p class="continue-btn"><?=anchor("client/post_detail/$user->id/unanswered_posts", 'continue reading')?></p>
+          <? }?> 
         </span><!-- /post-content -->
     	</li><!-- /all-Posts -->	
     	<? endforeach;?>

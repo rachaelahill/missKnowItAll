@@ -65,9 +65,12 @@ class Client extends CI_Controller {
 	  
 	  //if admin is not logged in it will load main user header, else it will load admin header
 	  if(empty($admin['logged_in'])){
+	  
     	//loading main header view
     	$this->load->view('header_view');
+    	
     }else{
+    
       //loading admin header view
       $this->load->view('admin_header_view');
     }
@@ -87,7 +90,11 @@ class Client extends CI_Controller {
 	    'userSign' => $this->input->post('signInpt'),
 	    'postDate' => time()
 	  );
+	  
+	  //sending array to post model to insert post function
   	$this->post_model->insert_post($data);
+  	
+  	//runs controller index
   	$this->index();
 	}
 }

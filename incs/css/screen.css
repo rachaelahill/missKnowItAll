@@ -184,6 +184,7 @@ header{
   font: 1.5em 'Fanwood Text', 'Times New Roman', serif;
   margin-bottom: 0;
   font-style: oblique;
+  clear: both;
 }
 
 .post-txt{

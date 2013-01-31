@@ -29,7 +29,7 @@
        <p class="log-out"><?=anchor('admin/log_out', 'Log Out');?></p>
        <h1 class="logo-name"><?=anchor('admin/', 'Miss Know It All');?></h1>
        <p class="logo-image">Bow</p>
-       <h2 class="unanswered"><? if($page == 'unanswered'){echo anchor('admin/', 'Unanswered', array('class' => 'active'));}else{echo anchor('admin/', 'Unanswered');}?></h2>
-       <h2 class="answered"><? if($page == 'answered_posts'){echo anchor('admin/answered_posts', 'Answered', array('class' => 'active'));}else{echo anchor('admin/answered_posts', 'Answered');}?></h2>
+       <h2 class="unanswered"><? if($this->uri->segment(2) == '' || $this->uri->segment(4) == 'unanswered_posts'){echo anchor('admin/', 'Unanswered', array('class' => 'active'));}else{echo anchor('admin/', 'Unanswered');}?></h2>
+       <h2 class="answered"><? if($this->uri->segment(2) == 'answered_posts' || $this->uri->segment(4) == 'answered_posts'){echo anchor('admin/answered_posts', 'Answered', array('class' => 'active'));}else{echo anchor('admin/answered_posts', 'Answered');}?></h2>
    <? }?>
    </header>
