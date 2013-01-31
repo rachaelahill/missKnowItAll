@@ -63,5 +63,11 @@
   	$this->db->update('userPosts', $respCol);
   	return;
 	}
+	
+//function deletes users' unanswered post from db by id
+  public function delete_unanswered_post(){
+    $this->db->where('userPosts.id', $this->uri->segment(3));
+    $this->db->delete('userPosts');
+  }
 
 }

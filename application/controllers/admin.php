@@ -63,9 +63,9 @@ class Admin extends CI_Controller {
   	$this->index();
 	}
 	
-//function runs when admin clicks on okay when asked to remove post 	
+//function runs when admin clicks on remove post 	
 	public function delete_post(){
-  	$this->admin_model->delete_unanswered_posts();
+  	$this->admin_model->delete_unanswered_post();
   	$this->index();
 	}	
 	
