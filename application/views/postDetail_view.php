@@ -25,21 +25,40 @@
       </div><!-- /all-posts -->
       <? if($user->response == 'yes'){?>
         <? if(isset($response)) : foreach($response as $resp) :?>
-          <div class="tucked-corners top-corners">
-            <span class="tucked-corners bottom-corners">       
-              <h2>Re: <?=$user->titleName;?></h2>
-              <? $admin['logged_in'] = $this->session->userdata('logged_in');
-      	   if(isset($admin['logged_in']) && $admin['logged_in'] && $user->response == 'yes'){?>
-      	     <p class="edit-resp"><?=anchor("admin/edit_resp/$user->id", 'Edit Reply')?></p>
-    	    <? }?>
-        	    <p class="resp-date"><?=date("F j, Y", $resp->respDate);?></p>
-        	    <div class="post-content">
-          	    <p class="dear-txt">Dear <?=$user->userSign;?>,</p>
-          	    <p class="post-txt"><?=$resp->respTxt;?></p>
-          	    <p class="sign-resp">Miss Know It All</p>
-        	    </div><!-- /post-content -->
+          <div class="response-content">
+            <div class="tucked-corners top-corners">
+              <span class="tucked-corners bottom-corners">       
+                <h2>Re: <?=$user->titleName;?></h2>
+                <? $admin['logged_in'] = $this->session->userdata('logged_in');
+        	   if(isset($admin['logged_in']) && $admin['logged_in'] && $user->response == 'yes'){?>
+        	     <p class="edit-resp">Edit Reply</p>
+      	    <? }?>
+          	    <p class="resp-date"><?=date("F j, Y", $resp->respDate);?></p>
+          	    <div class="post-content">
+            	    <p class="dear-txt">Dear <?=$user->userSign;?>,</p>
+            	    <p class="post-txt"><?=$resp->respTxt;?></p>
+            	    <p class="sign-resp">Miss Know It All</p>
+          	    </div><!-- /post-content -->
+              </span><!-- /tucked-corners bottom-corners -->
+            </div><!-- /tucked-corners top-corners -->	
+          </div><!-- /response-content -->
+          <div class="edit-resp-content">
+            <div class="tucked-corners top-corners">
+            <span class="tucked-corners bottom-corners">   
+              <?=form_open('admin/create_resp', array('class' => 'post-form'));?>
+                <h2>Re: <?=$user->titleName;?></h2>
+                <div class="post-content">
+                  <p class="dear-txt">Dear <?=$user->userSign;?>,</p>
+                  <p><textarea name="postInpt"><?=$resp->respTxt;?></textarea></p>
+                  <input type="hidden" name="userId" value="<?=$user->id?>"
+                  <p><input type="submit" class="resp-btn" value="Update Advice!" /></p>
+                  <p class="cancel-edit">Cancel</p>
+                  <p class="sign-resp">Miss Know It All</p>
+                </div><!-- /post-content -->
+              </form>
             </span><!-- /tucked-corners bottom-corners -->
-          </div><!-- /tucked-corners top-corners -->	
+          </div><!-- /post-content -->
+        </div><!-- /edit-resp-content -->
         <? endforeach ?>
         <? endif ?><!-- /admin resp conditional -->
       <? }else{?>

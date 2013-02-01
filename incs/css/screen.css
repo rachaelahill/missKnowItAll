@@ -1,7 +1,7 @@
 /*---------------------------------------- INFORMATION ------------------------------
 Author:  Rachael Hill
 Project: Miss Know It All - Advice Blog
-Date: 01/30/2013
+Date: 01/31/2013
 
     STYLE GUIDE
 Header Background Color: #e9e8e3
@@ -593,12 +593,23 @@ div.tucked-corners {
   text-decoration: none;
 }
 
-.edit-resp{
-  margin: 40px 15px 0 0;
+.post-form h2{
+  margin: 0 0 20px 15px;
 }
 
-.edit-resp a{
+.edit-resp-content{
+  display: none;  
+}
+
+.edit-resp{
+  margin: 40px 15px 0 0;
   font: 1em 'Open Sans', Helvetica, sans-serif;
   color: #648293;
-  text-decoration: none;
+  cursor: pointer;
+}
+
+.cancel-edit{
+  font: 1.2em 'Open Sans', Helvetica, sans-serif;
+  color: #c85847;
+  cursor: pointer;
 }
