@@ -57,8 +57,8 @@
                 <div class="post-content">
                   <p class="dear-txt">Dear <?=$user->userSign;?>,</p>
                   <p><textarea name="postInpt"><?=$resp->respTxt;?></textarea></p>
-                  <input type="hidden" name="userId" value="<?=$user->id?>"
-                  <p><input type="submit" class="resp-btn" value="Update Advice!" /></p>
+                  <input type="hidden" name="userId" value="<?=$user->id?>"/>
+                  <p><input type="submit"  class="resp-btn" value="Update Advice!" /></p>
                   <p class="cancel-edit">Cancel</p>
                   <p class="sign-resp">Miss Know It All</p>
                 </div><!-- /post-content -->

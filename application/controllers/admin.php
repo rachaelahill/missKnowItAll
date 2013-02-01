@@ -82,17 +82,19 @@ class Admin extends CI_Controller {
 	   'respDate' => time()
 	  );
 	  
-	  //if response input has text model function will run else send 404 error
-	  if($this->input->post('postInpt') != '')
+	  $query = $this->admin_model->check_response();
+  	
+	  //if response input field is blank or data already exists model function will send 404 error else run model
+	  if($query || $this->input->post('postInpt') == '')
 	  {
-  	  //sending array to admin model into update admin resp function
+	    //runs error controller
+  	  redirect('error/');
+	  }else{
+	    //sending array to admin model into update admin resp function
     	$this->admin_model->update_admin_resp($data);
     	
     	//runs answered posts function
     	$this->answered_posts();
-	  }else{
-	    //runs error controller
-  	  redirect('error/');
 	  }
 	}		
 	

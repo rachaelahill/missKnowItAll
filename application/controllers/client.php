@@ -91,7 +91,7 @@ class Client extends CI_Controller {
 	    'postDate' => time()
 	  );
 	  
-	  //if response input has text model function will run else send 404 error
+	  //if users' input fields has text model function will run else send 404 error
 	  if($this->input->post('titleInpt') != '' && $this->input->post('postInpt') != '' && $this->input->post('signInpt') != '')
 	  {
   	  //sending array to post model to insert post function

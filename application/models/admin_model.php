@@ -16,6 +16,18 @@
       return true;
     }
   }
+
+//function checks if response exists n db     
+   public function check_response()
+  {
+    $this->db->where('respTxt', $this->input->post('postInpt'));
+    $query = $this->db->get('adminPosts');
+    
+    if($query->num_rows == 1)
+    {
+      return true;
+    }
+  }
   
 //function adds a new admin into db  
   public function add_admin(){
