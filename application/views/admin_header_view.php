@@ -16,7 +16,7 @@
   <!-- FONTS -->
   <link href='http://fonts.googleapis.com/css?family=Arizonia|Fanwood+Text' rel='stylesheet' type='text/css'> 
   <!-- FAVICON -->
-  <link rel="shortcut icon" href="<?=base_url();?>incs/img/favicon.png" type="image/png"> 
+  <link rel="shortcut icon" href="<?=base_url();?>incs/img/favicon.ico" type="image/png"> 
   <!--[if lt IE 9]>
   <![endif]-->
 </head>
