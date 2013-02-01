@@ -38,8 +38,9 @@
   
 //function gets users posts from db where response is yes
   public function get_answered_posts(){
-    $this->db->where('response', 'yes')
-    ->order_by('postDate', 'desc');
+    $this->db->join('adminPosts', 'userPosts.id = adminPosts.userId')
+    ->where('userPosts.response', 'yes')
+    ->order_by('adminPosts.respDate', 'desc');
     $query = $this->db->get('userPosts');
     return $query->result();
   }
