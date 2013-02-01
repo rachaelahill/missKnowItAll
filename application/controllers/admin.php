@@ -61,6 +61,7 @@ class Admin extends CI_Controller {
 	    'respDate' => time()
 	  );
 	  
+	  //if response input has text model function will run else send 404 error
 	  if(isset($data[0]))
 	  {
   	  //sending array to admin model to insert resp function
@@ -69,6 +70,7 @@ class Admin extends CI_Controller {
     	//runs controller index
     	$this->index();
 	  }else{
+	    //runs error controller
   	  redirect('error/');
 	  }
 	}
