@@ -434,6 +434,9 @@ header{
 }
 
 /*------------------------- POST DETAIL/RESPONSE ------------------------*/
+.fb-like{
+  margin: 1em 0 0 8em;
+}
 .title-detail{ 
   color: #648293;
   font: 2.5em 'Fanwood Text', 'Times New Roman', serif;
