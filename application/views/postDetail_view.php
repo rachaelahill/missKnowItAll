@@ -29,9 +29,9 @@
             <span class="tucked-corners bottom-corners">       
               <h2>Re: <?=$user->titleName;?></h2>
               <? $admin['logged_in'] = $this->session->userdata('logged_in');
-              if(isset($admin['logged_in']) && $user->response == 'yes'){?>
-                <p class="edit-resp"><?=anchor("admin/edit_resp/$resp->id", 'Edit Reply')?></p>
-              <? }?>
+      	   if(isset($admin['logged_in']) && $admin['logged_in'] && $user->response == 'yes'){?>
+      	     <p class="edit-resp"><?=anchor("admin/edit_resp/$user->id", 'Edit Reply')?></p>
+    	    <? }?>
         	    <p class="resp-date"><?=date("F j, Y", $resp->respDate);?></p>
         	    <div class="post-content">
           	    <p class="dear-txt">Dear <?=$user->userSign;?>,</p>
