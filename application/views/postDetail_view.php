@@ -3,7 +3,10 @@
   	<? if(isset($posts)) : foreach($posts as $user) :?>	
   	  <div class="all-posts">
     	   <h2 class="title-detail"><?=$user->titleName;?></h2>
-    	   <div class="fb-like" data-href="http://rachaelhill.com/" data-send="true" data-layout="button_count" data-show-faces="false"></div>
+    	   <? $admin['logged_in'] = $this->session->userdata('logged_in');
+      	   if(empty($admin['logged_in'])){?>
+        	   <div class="fb-like" data-href="http://rachaelhill.com/" data-send="true" data-layout="button_count" data-show-faces="false"></div>
+        	 <? }?>
     	   <span class="ribbon-wrapper">
         		<span class="ribbon-front">
         			<p class="date-posted"><?=date("F j, Y", $user->postDate);?></p>
