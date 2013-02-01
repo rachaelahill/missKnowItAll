@@ -619,3 +619,20 @@ div.tucked-corners {
   color: #c85847;
   cursor: pointer;
 }
+
+/*------------------------- 404 ERROR PAGE ------------------------*/
+.error-header{
+  font: 2em 'Fanwood Text', 'Times New Roman', serif;
+  color: #c85847;
+  text-align: center;
+}
+
+.error-txt{
+  font: 1em 'Open Sans', Helvetica, sans-serif;
+}
+
+.back-page{
+  font: 1.2em 'Open Sans', Helvetica, sans-serif;
+  color: #648293;
+  cursor: pointer;
+}

@@ -8,8 +8,7 @@
     	    <? }else{?> 
     	      <h2><?=anchor("client/post_detail/$user->id/unanswered_posts", $user->titleName)?></h2>
     	    <? }?>  
-    	    <? $admin['logged_in'] = $this->session->userdata('logged_in');
-      	   if($user->response == 'no'){?>
+    	    <? if($user->response == 'no'){?>
       	     <p class="delete-post"><?=anchor("admin/delete_post/$user->id", 'Remove Post')?></p>
     	    <? }?>
     	  	<span class="ribbon-wrapper">

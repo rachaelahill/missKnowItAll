@@ -61,11 +61,16 @@ class Admin extends CI_Controller {
 	    'respDate' => time()
 	  );
 	  
-	  //sending array to admin model to insert resp function
-  	$this->admin_model->insert_resp($data);
+	  if(isset($data[0]))
+	  {
+  	  //sending array to admin model to insert resp function
+  	  $this->admin_model->insert_resp($data);
   	
-  	//runs controller index
-  	$this->index();
+    	//runs controller index
+    	$this->index();
+	  }else{
+  	  redirect('error/');
+	  }
 	}
 
 //function runs when admin clicks on edit resp
