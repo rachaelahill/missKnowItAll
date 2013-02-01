@@ -14,7 +14,9 @@
   <link rel="stylesheet" href="<?=base_url();?>incs/css/flexipage.css" type="text/css" media="screen"/>
   <link rel="stylesheet" href="<?=base_url();?>incs/css/jquery.ketchup.css" type="text/css" media="screen"/>
   <!-- FONTS -->
-  <link href='http://fonts.googleapis.com/css?family=Arizonia|Fanwood+Text' rel='stylesheet' type='text/css'>  
+  <link href='http://fonts.googleapis.com/css?family=Arizonia|Fanwood+Text' rel='stylesheet' type='text/css'> 
+  <!-- FAVICON -->
+  <link rel="shortcut icon" href="<?=base_url();?>incs/img/favicon.png" type="image/png"> 
   <!--[if lt IE 9]>
   <![endif]-->
 </head>
