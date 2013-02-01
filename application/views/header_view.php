@@ -3,7 +3,7 @@
 <!--  ==================== INFORMATION ====================	
   Author:  Rachael Hill
   Project: Miss Know It All - Advice Blog
-  Date: 01/23/2013
+  Date: 01/31/2013
 ======================================================= -->	
 <head>
   <meta charset="utf-8">
@@ -18,6 +18,7 @@
   <![endif]-->
 </head>
 <body>
+  <div id="fb-root"></div>
 <!--  ==================== HEADER ====================	-->	
 	<header>
 		<h1 class="logo-name"><?=anchor('client/', 'Miss Know It All');?></h1>
