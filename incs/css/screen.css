@@ -58,6 +58,18 @@ p{
   color: #181714;
 }
 
+noscript{
+  margin-left: 15em;
+  text-align: center;
+  background-color: #e9e8e3;
+  padding: 20px;
+  font: 1em 'Open Sans', Helvetica, sans-serif;
+}
+
+noscript a{
+  color: #a94f41;
+}
+
 
 /*------------------------- HEADING ------------------------*/
 header{
