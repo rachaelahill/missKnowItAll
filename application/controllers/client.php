@@ -88,6 +88,7 @@ class Client extends CI_Controller {
 	    'titleName' => $this->input->post('titleInpt'),
 	    'postTxt' => $this->input->post('postInpt'),
 	    'userSign' => $this->input->post('signInpt'),
+	    'response' => $this->input->post('noResp'),
 	    'postDate' => time()
 	  );
 	  

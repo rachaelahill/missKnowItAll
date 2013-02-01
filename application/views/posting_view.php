@@ -15,6 +15,7 @@
   		<p><textarea name="postInpt" data-validate="validate(minlength(10))"  required="true" id="post"></textarea></p>
   		<label>Signature:</label>
   		<p><input type="text" name="signInpt" data-validate="validate(required, maxlength(50)" class="post-inpt" placeholder="Ex: John Smith" /></p>
+  		<input type="hidden" name="noResp" value="no"/>
   		<p><input type="submit" class="submit-btn" value="Get Advice!" /></p>
   		<p class="cancel-btn"><?=anchor('client/', 'Cancel')?></p>
     </form>

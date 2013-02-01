@@ -17,7 +17,6 @@
   <link href='http://fonts.googleapis.com/css?family=Arizonia|Fanwood+Text' rel='stylesheet' type='text/css'>  
   <!--[if lt IE 9]>
   <![endif]-->
-  
 </head>
 <noscript>
  For full functionality of this site it is necessary to enable JavaScript.
