@@ -435,8 +435,11 @@ header{
 
 /*------------------------- POST DETAIL/RESPONSE ------------------------*/
 .fb-wrapper{
-  float: right;
+  margin-left: 11em;
+  position: relative;
+  bottom: 27px;
 }
+
 .title-detail{ 
   color: #648293;
   font: 2.5em 'Fanwood Text', 'Times New Roman', serif;
