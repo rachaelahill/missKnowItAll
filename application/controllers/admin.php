@@ -70,7 +70,13 @@ class Admin extends CI_Controller {
 
 //function runs when admin clicks on edit resp
 	public function edit_resp(){
-  	
+	  $data = array(
+	   'respTxt' => $this->input->post('postInpt');
+	   'respDate' => time();
+	  );
+	  
+  	$this->admin_model->update_admin_resp($data);
+  	redirect('client/post_detail');
 	}		
 	
 //function runs when admin clicks on remove post 	

@@ -51,8 +51,9 @@
           <div class="edit-resp-content">
             <div class="tucked-corners top-corners">
             <span class="tucked-corners bottom-corners">   
-              <?=form_open('admin/create_resp', array('class' => 'post-form'));?>
+              <?=form_open('admin/edit_resp', array('class' => 'post-form'));?>
                 <h2>Re: <?=$user->titleName;?></h2>
+          	    <p class="resp-date"><?=date("F j, Y", $resp->respDate);?></p>
                 <div class="post-content">
                   <p class="dear-txt">Dear <?=$user->userSign;?>,</p>
                   <p><textarea name="postInpt"><?=$resp->respTxt;?></textarea></p>
