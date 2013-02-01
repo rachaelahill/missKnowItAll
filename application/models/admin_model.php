@@ -63,6 +63,13 @@
   	$this->db->update('userPosts', $respCol);
   	return;
 	}
+
+//function runs when admin click submit btn on edit resp form	
+	public function update_admin_resp($data){
+  	$this->db->where('adminPosts.userId', $this->input->post('userId'));
+    $this->db->update('adminPosts', $data);
+    return;
+	}
 	
 //function deletes users' unanswered post from db by id
   public function delete_unanswered_post(){
