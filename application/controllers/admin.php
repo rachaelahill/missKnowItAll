@@ -62,7 +62,7 @@ class Admin extends CI_Controller {
 	  );
 	  
 	  //if response input has text model function will run else send 404 error
-	  if(isset($data[0]))
+	  if($this->input->post('postInpt') != '')
 	  {
   	  //sending array to admin model to insert resp function
   	  $this->admin_model->insert_resp($data);
@@ -83,7 +83,7 @@ class Admin extends CI_Controller {
 	  );
 	  
 	  //if response input has text model function will run else send 404 error
-	  if(isset($data[0]))
+	  if($this->input->post('postInpt') != '')
 	  {
   	  //sending array to admin model into update admin resp function
     	$this->admin_model->update_admin_resp($data);
