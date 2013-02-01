@@ -1,7 +1,7 @@
 /*---------------------------------------- INFORMATION ------------------------------
 Author:  Rachael Hill
 Project: Miss Know It All - Advice Blog
-Date: 01/31/2013
+Date: 01/01/2013
 --------------------------------------------------------------------------------*/
 $(document).ready(function() {
 	 //Pagination plugin
@@ -22,6 +22,8 @@ $(document).ready(function() {
   	 $('.response-content').css('display', 'block');
   	 $('.edit-resp-content').css('display', 'none');
 	 });
+	 
+	 $('form').ketchup();
 });     
 
 

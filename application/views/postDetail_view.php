@@ -56,7 +56,7 @@
           	    <p class="resp-date"><?=date("F j, Y", $resp->respDate);?></p>
                 <div class="post-content">
                   <p class="dear-txt">Dear <?=$user->userSign;?>,</p>
-                  <p><textarea name="postInpt"><?=$resp->respTxt;?></textarea></p>
+                  <p><textarea required="true" name="postInpt"><?=$resp->respTxt;?></textarea></p>
                   <input type="hidden" name="userId" value="<?=$user->id?>"/>
                   <p><input type="submit"  class="resp-btn" value="Update Advice!" /></p>
                   <p class="cancel-edit">Cancel</p>
@@ -75,7 +75,7 @@
               <h2>Re: <?=$user->titleName;?></h2>
               <div class="post-content">
                 <p class="dear-txt">Dear <?=$user->userSign;?>,</p>
-                <p><textarea name="postInpt" placeholder="Click here to start adivce..."></textarea></p>
+                <p><textarea name="postInpt" required="true" placeholder="Click here to start adivce..."></textarea></p>
                 <input type="hidden" name="userId" value="<?=$user->id?>"
                 <p><input type="submit" class="resp-btn" value="Give Advice!" /></p>
                 <p class="sign-resp">Miss Know It All</p>

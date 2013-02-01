@@ -3,7 +3,7 @@
 <!--  ==================== INFORMATION ====================	
   Author:  Rachael Hill
   Project: Miss Know It All - Advice Blog
-  Date: 01/31/2013
+  Date: 01/01/2013
 ======================================================= -->	
 <head>
   <meta charset="utf-8">
@@ -12,6 +12,7 @@
   <meta name="author" content="Rachael">
   <link rel="stylesheet" href="<?=base_url();?>incs/css/screen.css" type="text/css" media="screen"/>
   <link rel="stylesheet" href="<?=base_url();?>incs/css/flexipage.css" type="text/css" media="screen"/>
+  <link rel="stylesheet" href="<?=base_url();?>incs/css/jquery.ketchup.css" type="text/css" media="screen"/>
   <!-- FONTS -->
   <link href='http://fonts.googleapis.com/css?family=Arizonia|Fanwood+Text' rel='stylesheet' type='text/css'>  
   <!--[if lt IE 9]>
