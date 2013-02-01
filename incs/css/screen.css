@@ -434,8 +434,8 @@ header{
 }
 
 /*------------------------- POST DETAIL/RESPONSE ------------------------*/
-.fb-like{
-  margin: 1em 0 0 8em;
+.fb-wrapper{
+  float: right;
 }
 .title-detail{ 
   color: #648293;

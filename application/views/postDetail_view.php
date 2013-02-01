@@ -3,10 +3,6 @@
   	<? if(isset($posts)) : foreach($posts as $user) :?>	
   	  <div class="all-posts">
     	   <h2 class="title-detail"><?=$user->titleName;?></h2>
-    	   <? $admin['logged_in'] = $this->session->userdata('logged_in');
-      	   if(empty($admin['logged_in'])){?>
-        	   <div class="fb-like" data-href="http://rachaelhill.com/" data-send="true" data-layout="button_count" data-show-faces="false"></div>
-        	 <? }?>
     	   <span class="ribbon-wrapper">
         		<span class="ribbon-front">
         			<p class="date-posted"><?=date("F j, Y", $user->postDate);?></p>
@@ -19,6 +15,12 @@
         		<span class="ribbon-back-left"></span>
         		<span class="ribbon-back-right"></span>
         	</span><!-- /Ribbon -->
+        	<? $admin['logged_in'] = $this->session->userdata('logged_in');
+      	   if(empty($admin['logged_in'])){?>
+      	     <div class="fb-wrapper">
+        	   <div class="fb-like" data-href="<?=base_url().$this->uri->uri_string();?>" data-send="true" data-layout="button_count" data-show-faces="false"></div>
+      	     </div>
+        	 <? }?>
         <div class="post-content">
     	    <p class="dear-txt">Dear Miss Know It All,</p>
     	    <p class="post-txt"><?=$user->postTxt;?></p>
