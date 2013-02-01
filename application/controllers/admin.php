@@ -82,11 +82,18 @@ class Admin extends CI_Controller {
 	   'respDate' => time()
 	  );
 	  
-	  //sending array to admin model into update admin resp function
-  	$this->admin_model->update_admin_resp($data);
-  	
-  	//runs answered posts function
-  	$this->answered_posts();
+	  //if response input has text model function will run else send 404 error
+	  if(isset($data[0]))
+	  {
+  	  //sending array to admin model into update admin resp function
+    	$this->admin_model->update_admin_resp($data);
+    	
+    	//runs answered posts function
+    	$this->answered_posts();
+	  }else{
+	    //runs error controller
+  	  redirect('error/');
+	  }
 	}		
 	
 //function runs when admin clicks on remove post 	
